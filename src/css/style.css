@@ -240,7 +240,7 @@ body,head,html{
   border-left:1px solid #ddd;
 }
 .barra-de-msg{
-  width:calc(100% - 8px);
+  width:calc(100% - 16px);
   position:absolute;
   padding:8px;
   bottom:0;
