@@ -72,24 +72,6 @@ function escolher(e){
   let barrinha = document.getElementById('barrinha');
   let caixa = document.getElementById('esc'+personagemID());
 
-  caixa.style.display = 'none';
-  barrinha.setAttribute('data-escolha', escolha);
-  barrinha.setAttribute('data-next', proximo);
-  barrinha.setAttribute('data-atual', atual);
-  barrinha.innerHTML = e.innerHTML;
-}
-function enviar(){
-  let e = document.getElementById('barrinha');
-  if(!block){
-    var idc = personagemID();
-    var esc = e.getAttribute("data-escolha");
-    var next = e.getAttribute("data-next");
-    var atual = e.getAttribute("data-atual");
-    var dialogos = document.getElementById("d"+idc);
-    var escbox = document.getElementById("esc"+idc);
-    var escrevendo = document.getElementById("e"+idc);
-    var resRandom = Math.floor(Math.random() * 3000);
-    var barrinha = document.getElementById('barrinha');
     function fechar(){
       let escolha = document.getElementById('esc'+personagemID());
       if(!block){
@@ -117,13 +99,30 @@ function enviar(){
         let intLimpar = setInterval(function(){
           console.log(limpar)
           if(limpar === 2){
-            //escolha.removeAttribute('style');
+            escolha.removeAttribute('style');
             clearInterval(intLimpar);
           }
         },1)
       }
     }
     fechar();
+  barrinha.setAttribute('data-escolha', escolha);
+  barrinha.setAttribute('data-next', proximo);
+  barrinha.setAttribute('data-atual', atual);
+  barrinha.innerHTML = e.innerHTML;
+}
+function enviar(){
+  let e = document.getElementById('barrinha');
+  if(!block){
+    var idc = personagemID();
+    var esc = e.getAttribute("data-escolha");
+    var next = e.getAttribute("data-next");
+    var atual = e.getAttribute("data-atual");
+    var dialogos = document.getElementById("d"+idc);
+    var escbox = document.getElementById("esc"+idc);
+    var escrevendo = document.getElementById("e"+idc);
+    var resRandom = Math.floor(Math.random() * 3000);
+    var barrinha = document.getElementById('barrinha');
     if(next != "fim"){
       window.onbeforeunload = function impedimento(){return 'Miau';};
       document.getElementById('voltar').removeAttribute('onclick');
