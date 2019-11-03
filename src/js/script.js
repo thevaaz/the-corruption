@@ -96,13 +96,21 @@ function escolher(e){
   let atual = e.getAttribute('data-atual');
   let barrinha = document.getElementById('barrinha');
   let caixa = document.getElementById('esc'+personagemID());
+  let letra = 0;
+  let digitando = e.innerHTML.split('');
   
   fechar();
   //caixa.style.display = 'none';
   barrinha.setAttribute('data-escolha', escolha);
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
-  barrinha.innerHTML = e.innerHTML;
+  setInterval(function(){
+    if(letra < str.length){
+      barrinha.innerHTML += digitando[letra];
+      letra++;
+    }
+  },30);
+  //barrinha.innerHTML = e.innerHTML;
 }
 function enviar(){
   let e = document.getElementById('barrinha');
