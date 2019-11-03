@@ -65,14 +65,37 @@ window.onload = function janelaConversa(dataId){
     document.body.innerHTML = localStorage.getItem(document.body.id);
   }
 };
+function fechar(){
+  let escolha = document.getElementById('esc'+personagemID());
+  let barrinha = document.getElementById('barrinha');
+  let height = escolha.offsetHeight;
+  let width = escolha.offsetWidth;
+  if(!block){
+    let intSize = setInterval(function(){
+      if(escolha.offsetHeight > barrinha.offsetHeight){
+        height--;
+        escolha.style.height = `calc(${height}px)`;
+      }
+      if(escolha.offsetWidth > barrinha.offsetWidth){
+        width--;
+        escolha.style.width = `calc(${width}px)`;
+      }
+      if(escolha.offsetWidth === barrinha.offsetWidth && escolha.offsetHeight === barrinha.offsetHeight){
+        escolha.style.display = 'none';
+        clearInterval(intSize);
+      }
+    },5)
+  }
+}
 function escolher(e){
   let escolha = e.getAttribute('data-escolha');
   let proximo = e.getAttribute('data-next');
   let atual = e.getAttribute('data-atual');
   let barrinha = document.getElementById('barrinha');
   let caixa = document.getElementById('esc'+personagemID());
-
-  caixa.style.display = 'none';
+  
+  fechar();
+  //caixa.style.display = 'none';
   barrinha.setAttribute('data-escolha', escolha);
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
