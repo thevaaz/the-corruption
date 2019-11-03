@@ -58,9 +58,9 @@ window.onload = function janelaConversa(dataId){
   }
 };
 function escolher(e){
-  let escolha = e.getAtribute('data-escolha');
-  let proximo = e.getatribute('data-next');
-  let atual = e.getAtribute('data-atual');
+  let escolha = e.getAttribute('data-escolha');
+  let proximo = e.getAttribute('data-next');
+  let atual = e.getAttribute('data-atual');
   let barrinha = document.getElementById('barrinha');
 
   barrinha.setAttribute('data-escolha', escolha);
