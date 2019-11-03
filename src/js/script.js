@@ -11,8 +11,16 @@ function personagemID(){
   return document.body.id.split('id').join('');
 }
 function displayEsc(){
+  let escolha = document.getElementById('esc'+personagemID());
   if(!block){
-    document.getElementById('esc'+personagemID()).style.display = 'grid';
+    escolha.style.display = 'grid';
+    let width = 121;//62
+    setInterval(function(){
+      if(width > 62){
+        width--;
+        escolha.style.width = 'calc(100% - ' + width + 'px)';
+      }
+    },5);
   }
 }
 window.onload = function janelaConversa(dataId){
