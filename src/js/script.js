@@ -40,7 +40,7 @@ window.onload = function janelaConversa(dataId){
           <a class="esc" data-escolha="0" data-id="${tel}" data-atual="${per.dialogos[0].atual}" data-next="${per.dialogos[0].nx[0]}" onclick="escolher(this)">${per.dialogos[0].op[0]}</a>
           <a class="esc" data-escolha="1" data-id="${tel}" data-atual="${per.dialogos[0].atual}" data-next="${per.dialogos[0].nx[1]}" onclick="escolher(this)">${per.dialogos[0].op[1]}</a>
         </div>
-        <div class="barrinha" id='barrinha' onclick='displayEsc()'>Mensagem aqui...</div>
+        <div class="barrinha" id='barrinha' onclick='displayEsc()'><span id='texto-barrinha'>Mensagem aqui...</span></div>
         <div class='botao-de-envio' onclick='enviar()'><i class="fas fa-paper-plane"></i></div>
       </div>
       <div class="detalhes">
