@@ -83,7 +83,7 @@ function fechar(){
         console.log(width)
         escolha.style.width = `${width}px`;
       }
-      if(escolha.offsetWidth <== barrinha.offsetWidth && escolha.offsetHeight <== barrinha.offsetHeight){
+      if(escolha.offsetWidth <= barrinha.offsetWidth && escolha.offsetHeight <= barrinha.offsetHeight){
         escolha.removeAttribute('style');
         clearInterval(intSize);
       }
