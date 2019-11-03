@@ -71,6 +71,7 @@ function fechar(){
   let height = escolha.offsetHeight;
   let width = escolha.offsetWidth;
   if(!block){
+    escolha.style.color = '#fff';
     let intSize = setInterval(function(){
       if(escolha.offsetHeight > barrinha.offsetHeight){
         height--;
