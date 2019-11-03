@@ -62,7 +62,9 @@ function escolher(e){
   let proximo = e.getAttribute('data-next');
   let atual = e.getAttribute('data-atual');
   let barrinha = document.getElementById('barrinha');
+  let caixa = document.getElementById('esc'+personagemID());
 
+  caixa.style.display = 'none';
   barrinha.setAttribute('data-escolha', escolha);
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
