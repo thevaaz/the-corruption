@@ -257,6 +257,7 @@ body,head,html{
   white-space: nowrap;
 }
 #texto-barrinha{
+  display:inline-block;
   animation: typewriter 2s steps(1000) 1s 1 normal both, blinkTextCursor 500ms steps(1000) infinite normal;
 }
 @keyframes typewriter{
