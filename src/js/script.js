@@ -74,10 +74,12 @@ function fechar(){
     let intSize = setInterval(function(){
       if(escolha.offsetHeight > barrinha.offsetHeight){
         height--;
+        console.log(height)
         escolha.style.height = `calc(${height}px)`;
       }
       if(escolha.offsetWidth > barrinha.offsetWidth){
         width--;
+        console.log(width)
         escolha.style.width = `calc(${width}px)`;
       }
       if(escolha.offsetWidth === barrinha.offsetWidth && escolha.offsetHeight === barrinha.offsetHeight){
