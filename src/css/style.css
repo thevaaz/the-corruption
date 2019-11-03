@@ -216,7 +216,7 @@ body,head,html{
 }
 .escbox{
   position:absolute;
-  bottom:8px;
+  bottom:12px;
   background:#fff;
   width: calc(100% - 62px);
   /*width:calc(100% - 121px);*/
