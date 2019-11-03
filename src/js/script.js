@@ -92,7 +92,38 @@ function enviar(){
     var escrevendo = document.getElementById("e"+idc);
     var resRandom = Math.floor(Math.random() * 3000);
     var barrinha = document.getElementById('barrinha');
-    document.getElementById('esc'+personagemID()).removeAttribute('style');
+    function fechar(){
+      let escolha = document.getElementById('esc'+personagemID());
+      if(!block){
+        let limpar = 0;
+        let width = 62; //62 & 121
+        let height = escolha.offsetHeight;
+        let intWidth = setInterval(function(){
+          if(width < 121){
+            width++;
+            escolha.style.width = 'calc(100% - ' + width + 'px)';
+          }else if(width === 121){
+            limpar++
+            clearInterval(intWidth);
+          }
+        },5);
+        let intHeight = setInterval(function(){
+          if(height > 49){
+            height--;
+            escolha.style.height = `${height}px`;
+          }else if(height === 49){
+            limpar++
+            clearInterval(intHeight);
+          }
+        },5)
+        let intLimpar = setInterval(function(){
+          if(limpar === 2){
+            escolha.removeAttribute('style');
+          }
+        }1)
+      }
+    }
+    fechar();
     if(next != "fim"){
       window.onbeforeunload = function impedimento(){return 'Miau';};
       document.getElementById('voltar').removeAttribute('onclick');
