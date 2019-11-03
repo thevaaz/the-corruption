@@ -140,7 +140,7 @@ function enviar(){
       dialogos.innerHTML += `<div><span class="msg dir">${e.innerHTML}</span></div>`;
       localStorage.setItem('ult'+idc, document.querySelector(`#d${idc} > div:last-child > span`).innerHTML);
       //document.querySelector(`#${personagem[idc].nome+idc} > span.data`).innerHTML = novaHora();
-      barrinha.innerHTML = '<span id='texto-barrinha'>Escolha uma opção</span>';
+      barrinha.innerHTML = "<span id='texto-barrinha'>Escolha uma opção</span>";
       barrinha.removeAttribute('data-escolha');
       barrinha.removeAttribute('data-next');
       barrinha.removeAttribute('data-atual');
