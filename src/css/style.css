@@ -259,6 +259,7 @@ body,head,html{
 #texto-barrinha{
   overflow:hidden;
   display:block;
+  border-right: 2px solid rgba(0,0,0,.75)
   animation: typewriter 1500ms steps(1000) 500ms 1 normal both, blinkTextCursor 500ms steps(1000) infinite normal;
 }
 @keyframes typewriter{
