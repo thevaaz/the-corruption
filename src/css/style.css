@@ -264,7 +264,7 @@ body,head,html{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{}
+  to{calc(max-content - 0px);}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(0,0,0,.75);}
