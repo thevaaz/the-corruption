@@ -120,7 +120,7 @@ function enviar(){
           if(limpar === 2){
             escolha.removeAttribute('style');
           }
-        }1)
+        },1)
       }
     }
     fechar();
