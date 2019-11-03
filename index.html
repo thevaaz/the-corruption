@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/fonts/fontawesome/css/all.css"/>
+    <style type="text/css">
+    html,head,body{
+      padding:0;
+      margin:0;
+      margin:0;
+      padding:0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    body{
+      background-image:url(./src/imagens/wallpaper.png);
+      background-size: calc(100% + 1px);
+      background-repeat: no-repeat;
+      border:1px solid;
+    }
+    .prop{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      background:#232323;
+      color:#fff;
+      height:25px;
+    }
+    .body{
+      margin-top:25px;
+    }
+    #relogio{
+      float:right;
+      padding:2px 8px;
+    }
+    .grade-de-app{
+      display:grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(4, 110px);
+      /* background:#ddd; */
+    }
+    .app{
+      margin:auto;
+      text-align:center;
+      width:60px;
+      height:60px;
+      background:none;
+      border:none;
+      position:relative;
+      outline:none;
+    }
+    .app:after{
+      bottom:-23px;
+      left:0;
+      width:60px;
+      font-weight:500;
+      text-align:center;
+      position:absolute;
+      color:#fff;
+    }
+    .app:active{
+      box-shadow: 0px 0px 4px #fff;
+    }
+    .facebook{
+      background:transparent;
+      background-image:url(./src/imagens/facebook.jpg);
+      border-radius:50%;
+      background-size:100%;
+    }
+    .facebook:after{
+      content:"Facebook";
+    }
+    .instagram{
+      background:transparent;
+      background-image:url(./src/imagens/instagram-logo.jpg);
+      background-size:100%;
+      border-radius:14px;
+    }
+    .instagram:after{
+      content:"Instagram";
+    }
+    .google{
+      background:transparent;
+      background-image:url(./src/imagens/google.png);
+      background-size:100%;
+      border-radius:50%;
+    }
+    .google:after{
+      content:"Google";
+    }
+    .nextdark{
+      background:transparent;
+      background-image:url(./src/imagens/nextdark.png);
+      background-size:100%;
+      border-radius:50%;
+    }
+    .nextdark:after{
+      content:"Next Dark";
+    }
+    .whats{
+      background:transparent;
+      background-image:url(./src/imagens/whatsapp.png);
+      background-size:100%;
+      
+    }
+    .whats:after{
+      content:"WhatsApp";
+    }
+    .full{
+      display:none;
+      position:fixed;
+      width:100%;
+      margin-top:25px;
+      height:calc(100% - 25px);
+      top:0;
+      left:0;
+    }
+    .iframefull{
+      border:none;
+      width:100%;
+      height:100%;
+    }
+    @media screen and (max-width: 425px){
+      
+    }
+    @media screen and (max-width: 375px){
+      
+    }
+    </style>
+  </head>
+  <body onload="full()">
+    <template style="display:none">
+      <div class="wincon" id="326682">
+        <div class="header">
+          <button class="btnbarranf" onclick="back(this)"><i class="fas fa-angle-left"></i> Voltar</button>
+          <div class="ncon">João</div>
+        </div>
+        <div class="dialogos" id="d326682">
+          <div>
+            <span class="msg esq">Oi tudo bem?</span>
+          </div>
+          <div>
+            <span class="msg dir"> Tudo e vc?</span>
+          </div>
+        </div>
+        <div class="escbox">
+          <a class="esc">Escolha 1</a>
+          <a class="esc">Escolha 2</a>
+        </div>
+      </div>
+    </template>
+    <div class="prop" id="prop"><span id="relogio"></span></div>
+    <div class="body">
+    <div class="grade-de-app">
+      <button class="app facebook" onclick="localStorage.clear()"></button>
+      <button class="app instagram"></button>
+      <button class="app google"></button>
+      <button class="app nextdark" onclick="nextdark()"></button>
+      <button class="app whats" onclick="window.location.href='./mensagens/index.html'"></button>
+    </div>
+    <div class="full" id="nd">
+      <iframe src="//nextdark.com/" class="iframefull"></iframe>
+    </div>
+    <script type="text/javascript" src="./src/js/script.js"></script>
+    <script type="text/javascript">
+    function nextdark(){
+      var nextdark = document.getElementById("nd");
+      nextdark.style.display = "block"
+    }
+    /* ------------------------------------------- */
+    var relogio = document.getElementById("relogio");
+    function novaHora() {
+      function pad(s) {
+        return (s < 10) ? '0' + s : s;
+      }
+      var date = new Date();
+      return [date.getHours(), date.getMinutes()].map(pad).join(':');
+    }
+    setInterval(function constHora(){
+      relogio.innerHTML = novaHora();
+    },1000);
+    function launchFullscreen(element) {
+      if(element.requestFullscreen) {
+          element.requestFullscreen();
+      } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+      } else if(element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+      } else if(element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+      }
+    }
+    window.onload = function full() {
+      var url = new URL(window.location);
+      var sim = url.searchParams.get("s")
+      if(!sim){
+        launchFullscreen(document.documentElement);
+      }
+    }
+    </script>
+    </div>
+  </body>  
+</html>

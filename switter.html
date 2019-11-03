@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://app.sollic.com/fontawesome/css/all.css">
+    <title>Switter</title>
+    <!--  <script src="https://kit.fontawesome.com/7c33dff1d8.js" crossorigin="anonymous"></script>
+    <script src="https://app.sollic.com/personagens-1.0.4.js"></script> -->
+    <script src="https://app.sollic.com/error-1.0.2.js"></script>
+    <script src="https://app.sollic.com/jquery.js"></script>
+    <style type='text/css'>
+     @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+    .header {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:90;
+      color:#fff;
+      text-transform:uppercase;
+      height:50px;
+      background:#25003e;
+    }
+    .switterlogo {
+      font-size:30px;
+      padding:10px;
+    }
+    .swittertop {
+      text-transform:capitalize;
+      font-family:'Liu Jian Mao Cao', cursive;
+      position:absolute;
+      top:6px;
+      left:46px;
+      font-size:25px;
+      padding:0 0;
+      font-weight:600;
+    }
+    .loading{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:200;
+      background:#25003e;
+    }
+    .loading span{
+      color:#fff;
+      position:absolute;
+      top:50%;
+    }
+    .loading-switter{
+      position:relative;
+      top:calc(40% - 78px);
+      left:calc(50% - 78px);
+      font-size:180px;
+      color:#fff;
+    }
+    .loading-switter:after{
+      content:'Switter';
+      font-size:40px;
+      position:absolute;
+      bottom:-45px;
+      left:calc(50% - 52px);
+      font-family: 'Liu Jian Mao Cao', cursive;
+    }
+    </style>
+  </head>
+  <body id="switter" onclick='openFullscreen(this)'>
+    <div class="loading">
+      <i class="fab fa-superpowers loading-switter"></i>
+    </div>
+    <div class="header">
+      <i class="fab fa-superpowers switterlogo" aria-hidden="true"></i>
+      <span class="swittertop">Switter</span>
+    </div>
+    <script>
+    (function loading(){
+      let fade = 9;
+      let loadingTO = setTimeout(function(){
+        setInterval(function(){
+          document.getElementsByClassName('loading')[0].style.opacity = '0.'+fade;
+          fade--;
+          if(fade <= 1){
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+          }
+        }, 20);
+      },15000);
+    })();
+    </script>
+  </body>
+</html>
