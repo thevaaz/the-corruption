@@ -93,6 +93,7 @@ function enviar(){
     var resRandom = Math.floor(Math.random() * 3000);
     var barrinha = document.getElementById('barrinha');
     document.getElementById('esc'+personagemID()).style.display = 'none';
+    document.getElementById('esc'+personagemID()).style.width = 'calc(100% - 121px)';
     if(next != "fim"){
       window.onbeforeunload = function impedimento(){return 'Miau';};
       document.getElementById('voltar').removeAttribute('onclick');
