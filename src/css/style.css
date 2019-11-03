@@ -229,12 +229,14 @@ body,head,html{
   z-index: 1;
 }
 .esc{
-  padding:15px;
+  padding:5px;
 }
 .esc:first-child{
+  padding-right:15px;
   border-right:1px solid #ddd;
 }
 .esc:last-child{
+  padding-left:15px;
   border-left:1px solid #ddd;
 }
 .barra-de-msg{
