@@ -100,6 +100,7 @@ function escolher(e){
   let proximo = e.getAttribute('data-next');
   let atual = e.getAttribute('data-atual');
   let barrinha = document.getElementById('barrinha');
+  let txtBarrinha = document.getElementById('texto-barrinha')
   let caixa = document.getElementById('esc'+personagemID());
   let letra = 0;
   let digitando = e.innerHTML.split('');
@@ -110,15 +111,15 @@ function escolher(e){
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
   if(estilo){
-    barrinha.innerHTML = '';
+    txtBarrinha.innerHTML = '';
     setInterval(function(){
       if(letra < digitando.length){
-        barrinha.innerHTML += digitando[letra];
+        txtBarrinha.innerHTML += digitando[letra];
         letra++;
       }
     },30);
   }else{
-    barrinha.innerHTML = e.innerHTML;
+    txtBarrinha.innerHTML = e.innerHTML;
   }
 }
 function enviar(){
