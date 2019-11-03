@@ -101,9 +101,9 @@ function enviar(){
         let intWidth = setInterval(function(){
           if(width < 121){
             width++;
-            escolha.style.width = 'calc(100% - ' + width + 'px)';
+            escolha.style.width = `calc(100% - ${width}px)`;
           }else if(width === 121){
-            limpar++
+            limpar = limpar + 1;
             clearInterval(intWidth);
           }
         },5);
@@ -112,13 +112,14 @@ function enviar(){
             height--;
             escolha.style.height = `${height}px`;
           }else if(height === 49){
-            limpar++
+            limpar = limpar + 1;
             clearInterval(intHeight);
           }
         },5)
         let intLimpar = setInterval(function(){
           if(limpar === 2){
             escolha.removeAttribute('style');
+            clearInterval(intLimpar);
           }
         },1)
       }
