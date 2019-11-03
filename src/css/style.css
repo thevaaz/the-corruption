@@ -256,6 +256,17 @@ body,head,html{
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+#texto-barrinha{
+  animation: typewriter 2s steps(1000) 1s 1 normal both, blinkTextCursor 500ms steps(1000) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
 .botao-de-envio{
   position:absolute;
   top:8px;
