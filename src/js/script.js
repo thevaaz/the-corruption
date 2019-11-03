@@ -1,5 +1,6 @@
 var block = false;
 var load = true;
+var estilo = false;
 function novaHora() {
   function pad(s) {
     return (s < 10) ? '0' + s : s;
@@ -71,23 +72,27 @@ function fechar(){
   let height = escolha.offsetHeight;
   let width = escolha.offsetWidth;
   if(!block){
-    escolha.style.color = '#fff';
-    let intSize = setInterval(function(){
-      if(escolha.offsetHeight > barrinha.offsetHeight){
-        height--;
-        console.log(height)
-        escolha.style.height = `${height}px`;
-      }
-      if(escolha.offsetWidth > barrinha.offsetWidth){
-        width--;
-        console.log(width)
-        escolha.style.width = `${width}px`;
-      }
-      if(escolha.offsetWidth <= barrinha.offsetWidth && escolha.offsetHeight <= barrinha.offsetHeight){
-        escolha.removeAttribute('style');
-        clearInterval(intSize);
-      }
-    },2)
+    if(estilo){
+      escolha.style.color = '#fff';
+      let intSize = setInterval(function(){
+        if(escolha.offsetHeight > barrinha.offsetHeight){
+          height--;
+          console.log(height)
+          escolha.style.height = `${height}px`;
+        }
+        if(escolha.offsetWidth > barrinha.offsetWidth){
+          width--;
+          console.log(width)
+          escolha.style.width = `${width}px`;
+        }
+        if(escolha.offsetWidth <= barrinha.offsetWidth && escolha.offsetHeight <= barrinha.offsetHeight){
+          escolha.removeAttribute('style');
+          clearInterval(intSize);
+        }
+      },2)
+    }else{
+      escolha.removeAttribute('style');
+    }
   }
 }
 function escolher(e){
@@ -106,6 +111,7 @@ function escolher(e){
   barrinha.setAttribute('data-atual', atual);
   setInterval(function(){
     if(letra < digitando.length){
+      barrinha.innerHTML = '';
       barrinha.innerHTML += digitando[letra];
       letra++;
     }
