@@ -11,7 +11,9 @@ function personagemID(){
   return document.body.id.split('id').join('');
 }
 function displayEsc(){
-  document.getElementById('esc'+personagemID()).style.display = 'grid';
+  if(!block){
+    document.getElementById('esc'+personagemID()).style.display = 'grid';
+  }
 }
 window.onload = function janelaConversa(dataId){
   if(!localStorage.getItem(document.body.id)){
