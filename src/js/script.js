@@ -81,7 +81,7 @@ function fechar(){
         escolha.style.width = `calc(${width}px)`;
       }
       if(escolha.offsetWidth === barrinha.offsetWidth && escolha.offsetHeight === barrinha.offsetHeight){
-        escolha.style.display = 'none';
+        escolha.removeAttribute('style');
         clearInterval(intSize);
       }
     },5)
