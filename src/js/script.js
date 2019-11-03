@@ -30,7 +30,7 @@ window.onload = function janelaConversa(dataId){
     document.body.innerHTML += `
       <div class="header preto">
         <button id="voltar" class="btnbarranf" onclick="window.location.href='/mensagens/'"><i class="fas fa-angle-left"></i> <div class="perfilcon" style="background-image: url(${per.imagem});"></div></button>
-        <div class="ncon" onclick="document.querySelector('#w${tel} > div.detalhes').style.visibility='visible'">${per.nome}</div>
+        <div class="ncon" onclick="document.getElementsByClassName('detalhes')[0].style.visibility='visible'">${per.nome}</div>
       </div>
       <div class="dialogos" id="d${tel}"></div>
       <div class="digitando" id="e${tel}">${personagem[tel].nome} está digitando...</div>
