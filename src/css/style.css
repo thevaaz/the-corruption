@@ -266,7 +266,7 @@ body,head,html{
   to{width: 100%;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(0,0,0,.75);}
   to{border-right-color: transparent;}
 }
 .botao-de-envio{
