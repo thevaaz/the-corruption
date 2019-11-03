@@ -354,11 +354,11 @@ body,head,html{
 .detalhes {
   z-index:500;
   visibility:hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100%);
+  height: 100%;
   overflow-x:hidden;
   overflow-y:auto;
   background:#2a2a2d;
@@ -366,7 +366,7 @@ body,head,html{
 .container-detalhes{
   position:absolute;
   left:0;
-  width:280px;
+  width:100%;
   margin:auto;
   overflow-y:auto;
 }
