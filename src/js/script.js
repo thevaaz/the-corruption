@@ -105,7 +105,7 @@ function escolher(e){
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
   setInterval(function(){
-    if(letra < str.length){
+    if(letra < digitando.length){
       barrinha.innerHTML += digitando[letra];
       letra++;
     }
