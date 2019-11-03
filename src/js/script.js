@@ -174,11 +174,7 @@ function novaConversa(){
   });
 }
 function paginaPersonagem(e){
-  if(!window.location.href.includes('index.html')){
-    window.location.href = window.location.href + e.getAttribute('data-id');
-  }else{
-    window.location.href = window.location.href.replace('index.html', '') + e.getAttribute('data-id') + '.html';
-  }
+  window.location.href = window.location.href + e.getAttribute('data-id');
 }
 function back(e){
   if(e.parentElement.parentElement.style.visibility == "visible"){
