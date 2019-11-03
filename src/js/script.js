@@ -100,7 +100,6 @@ function escolher(e){
   let proximo = e.getAttribute('data-next');
   let atual = e.getAttribute('data-atual');
   let barrinha = document.getElementById('barrinha');
-  let txtBarrinha = document.getElementById('texto-barrinha')
   let caixa = document.getElementById('esc'+personagemID());
   let letra = 0;
   let digitando = e.innerHTML.split('');
@@ -111,15 +110,15 @@ function escolher(e){
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
   if(estilo){
-    txtBarrinha.innerHTML = '';
+    barrinha.innerHTML = '';
     setInterval(function(){
       if(letra < digitando.length){
-        txtBarrinha.innerHTML += digitando[letra];
+        barrinha.innerHTML += digitando[letra];
         letra++;
       }
     },30);
   }else{
-    txtBarrinha.innerHTML = e.innerHTML;
+    barrinha.innerHTML = `<span id='texto-barrinha'>${e.innerHTML}</span>`;
   }
 }
 function enviar(){
@@ -140,7 +139,7 @@ function enviar(){
       dialogos.innerHTML += `<div><span class="msg dir">${e.innerHTML}</span></div>`;
       localStorage.setItem('ult'+idc, document.querySelector(`#d${idc} > div:last-child > span`).innerHTML);
       //document.querySelector(`#${personagem[idc].nome+idc} > span.data`).innerHTML = novaHora();
-      barrinha.innerHTML = "<span id='texto-barrinha'>Escolha uma opção</span>";
+      barrinha.innerHTML = "Escolha uma opção";
       barrinha.removeAttribute('data-escolha');
       barrinha.removeAttribute('data-next');
       barrinha.removeAttribute('data-atual');
