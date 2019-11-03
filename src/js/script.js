@@ -44,7 +44,7 @@ window.onload = function janelaConversa(dataId){
       </div>
       <div class="detalhes">
         <div class="header preto">
-          <button class="btnbarranf" onclick="document.getElementsByClassName('detalhes')[0].style.display = 'none'">
+          <button class="btnbarranf" onclick="document.getElementsByClassName('detalhes')[0].style.visibility = 'hidden'">
             <i class="fas fa-angle-left"></i>
             <div class="perfilcon" style="background-image: url(${per.imagem});"></div></button>
           <div class="ncon">${per.nome}</div>
