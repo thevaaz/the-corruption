@@ -218,7 +218,7 @@ body,head,html{
   position:absolute;
   bottom:12px;
   background:#fff;
-  width: calc(100% - 62px);
+  width: calc(100% - 121px);
   /*width:calc(100% - 121px);*/
   padding:15px;
   /*background:rgba(0,0,0,.5);*/
