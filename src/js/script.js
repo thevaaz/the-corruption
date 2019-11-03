@@ -16,7 +16,7 @@ function displayEsc(){
     escolha.style.display = 'grid';
     let width = 98;//62
     setInterval(function(){
-      if(width > 62){
+      if(width > 46){
         width--;
         escolha.style.width = 'calc(100% - ' + width + 'px)';
       }
@@ -94,7 +94,7 @@ function enviar(){
       let escolha = document.getElementById('esc'+personagemID());
       if(!block){
         let limpar = 0;
-        let width = 62; //62 & 121
+        let width = 46; //46 & 98
         let height = escolha.offsetHeight;
         let intWidth = setInterval(function(){
           if(width < 98){
@@ -117,7 +117,7 @@ function enviar(){
         let intLimpar = setInterval(function(){
           console.log(limpar)
           if(limpar === 2){
-            escolha.removeAttribute('style');
+            //escolha.removeAttribute('style');
             clearInterval(intLimpar);
           }
         },1)
