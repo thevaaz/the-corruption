@@ -248,7 +248,7 @@ body,head,html{
 .barrinha{
   display:inline-block;
   border-radius:23px;
-  width:calc(100% - 113px);
+  width:calc(100% - 98px);
   padding:15px 19px;
   background:#fff;
   color:#000000;
