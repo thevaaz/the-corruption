@@ -28,7 +28,6 @@ window.onload = function janelaConversa(dataId){
     var tel = personagemID();
     var per = personagem[tel];
     document.body.innerHTML += `
-    <div id="w${tel}" class="wincon" style="visibility:visible;">
       <div class="header preto">
         <button id="voltar" class="btnbarranf" onclick="window.location.href='/mensagens/'"><i class="fas fa-angle-left"></i> <div class="perfilcon" style="background-image: url(${per.imagem});"></div></button>
         <div class="ncon" onclick="document.querySelector('#w${tel} > div.detalhes').style.visibility='visible'">${per.nome}</div>
@@ -60,8 +59,7 @@ window.onload = function janelaConversa(dataId){
             <div><span>Idade</span><span>${per.idade} anos</span></div>
           </div>
         </div>
-      </div>
-    </div>`;
+      </div>`;
     localStorage.setItem(document.body.id, document.body.innerHTML);
   }else{
     document.body.innerHTML = localStorage.getItem(document.body.id);
