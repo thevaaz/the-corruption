@@ -117,6 +117,7 @@ function enviar(){
           }
         },5)
         let intLimpar = setInterval(function(){
+          console.log(limpar)
           if(limpar === 2){
             escolha.removeAttribute('style');
             clearInterval(intLimpar);
