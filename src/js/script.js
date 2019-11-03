@@ -109,14 +109,17 @@ function escolher(e){
   barrinha.setAttribute('data-escolha', escolha);
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
-  barrinha.innerHTML = '';
-  setInterval(function(){
-    if(letra < digitando.length){
-      barrinha.innerHTML += digitando[letra];
-      letra++;
-    }
-  },30);
-  //barrinha.innerHTML = e.innerHTML;
+  if(estilo){
+    barrinha.innerHTML = '';
+    setInterval(function(){
+      if(letra < digitando.length){
+        barrinha.innerHTML += digitando[letra];
+        letra++;
+      }
+    },30);
+  }else{
+    barrinha.innerHTML = e.innerHTML;
+  }
 }
 function enviar(){
   let e = document.getElementById('barrinha');
