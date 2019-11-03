@@ -1,0 +1,34 @@
+<div id="w3266820" class="wincon" style="visibility:visible;">
+  <div class="header preto">
+    <button id="voltar" class="btnbarranf" onclick="window.location.href='/mensagens/'"><i class="fas fa-angle-left"></i> <div class="perfilcon" style="background-image: url(/imagens/allison-avatar.jpg);"></div></button>
+    <div class="ncon" onclick="document.querySelector('#w3266820 > div.detalhes').style.visibility='visible'">Allison</div>
+  </div>
+  <div class="dialogos" id="d3266820"></div>
+  <div class="digitando" id="e3266820">Allison está digitando...</div>
+  <div class="barra-de-msg">
+    <div class="escbox" id="esc3266820">
+      <a class="esc" data-escolha="0" data-id="3266820" data-atual="0" data-next="1" onclick="enviar(this)">Olá tudo bem?</a>
+      <a class="esc" data-escolha="1" data-id="3266820" data-atual="0" data-next="1" onclick="enviar(this)">Oi</a>
+    </div>
+    <div class="barrinha" onclick="displayEsc()">Mensagem aqui...</div>
+    <div class="botao-de-envio" onclick="enviar()><i class="fas fa-paper-plane"></i></div>
+  </div>
+  <div class="detalhes">
+    <div class="header preto">
+      <button class="btnbarranf" onclick="document.getElementsByClassName('detalhes')[0].style.display = 'none'">
+        <i class="fas fa-angle-left"></i>
+        <div class="perfilcon" style="background-image: url(/imagens/allison-avatar.jpg);"></div></button>
+      <div class="ncon">Allison</div>
+    </div>
+    <div class="container-detalhes">
+      <div class="imagem-detalhes">
+        <div style="background-image: url(/imagens/allison-avatar.jpg);"></div>
+      </div>
+      <div class="nome-detalhes">Allison</div>
+      <div class="mais-detalhes">
+        <div><span>Telefone</span><span>326-6820</span></div>
+        <div><span>Idade</span><span>27 anos</span></div>
+      </div>
+    </div>
+  </div>
+</div>

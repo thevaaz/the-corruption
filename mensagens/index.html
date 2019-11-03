@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Corruption</title>
+    <link rel="stylesheet" type="text/css" href="../src/fonts/fontawesome/css/all.css"/>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/fonts/LiuJianMaoCao-Regular.ttf">
+    <script src="../src/js/personagens.js"></script>
+    <script src="../src/js/error.js"></script>
+    <script src="../src/js/jquery.js"></script>
+    <script src="../src/js/jquery.maskedinput.min.js"></script>
+  </head>
+  <body id="mensagens">
+    <div id="error"></div>
+    <div class="telafull" onclick="localStorage.setItem('sumiu','gg');this.style.display = 'none';">
+      <div class="prealfa">
+        Está é uma versão de testes, nenhuma fala ou aparencia estará na versão final.<br /><br />
+        <div>CLIQUE PARA FECHAR.</div>
+      </div>
+    </div>
+    <div id="modal">
+      <div id="cmodal" onclick=""></div>
+      <div class="ctnmodal">
+        <span id="aviso">Numero de exemplo: 326-6820</span>
+        <input type="text" id="tel">
+        <button onclick="addConversa()">Adicionar</button>
+      </div>
+    </div>
+    <div class="header preto">
+      <div class="nomeapp">
+        <i class="far fa-envelope"></i>
+        <span class="textotop">Mensagens</span>
+      </div>
+      <button class="btnbarra" onclick="novaConversa()"><i class="fas fa-plus"></i></button>
+    </div>
+    <div class="container" id="container">
+    </div>
+    <script type="text/javascript" src="../src/js/script.js"></script>
+  </body>
+</html>
