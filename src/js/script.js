@@ -14,7 +14,7 @@ function displayEsc(){
   let escolha = document.getElementById('esc'+personagemID());
   if(!block){
     escolha.style.display = 'grid';
-    let width = 121;//62
+    let width = 98;//62
     setInterval(function(){
       if(width > 62){
         width--;
@@ -97,10 +97,10 @@ function enviar(){
         let width = 62; //62 & 121
         let height = escolha.offsetHeight;
         let intWidth = setInterval(function(){
-          if(width < 121){
+          if(width < 98){
             width++;
             escolha.style.width = `calc(100% - ${width}px)`;
-          }else if(width === 121){
+          }else if(width === 98){
             limpar = limpar + 1;
             clearInterval(intWidth);
           }
