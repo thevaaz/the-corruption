@@ -357,7 +357,7 @@ body,head,html{
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100%);
+  width: 100%;
   height: calc(100%);
   overflow-x:hidden;
   overflow-y:auto;
@@ -366,7 +366,8 @@ body,head,html{
 .container-detalhes{
   position:absolute;
   left:0;
-  width:100vw;
+  width:280px;
+  margin:auto;
   overflow-y:auto;
 }
 .imagem-detalhes{
