@@ -72,40 +72,7 @@ function escolher(e){
   let barrinha = document.getElementById('barrinha');
   let caixa = document.getElementById('esc'+personagemID());
 
-    function fechar(){
-      let escolha = document.getElementById('esc'+personagemID());
-      if(!block){
-        let limpar = 0;
-        let width = 46; //46 & 98
-        let height = escolha.offsetHeight;
-        let intWidth = setInterval(function(){
-          if(width < 98){
-            width++;
-            escolha.style.width = `calc(100% - ${width}px)`;
-          }else if(width === 98){
-            limpar = limpar + 1;
-            clearInterval(intWidth);
-          }
-        },5);
-        let intHeight = setInterval(function(){
-          if(height > 49){
-            height--;
-            escolha.style.height = `${height}px`;
-          }else if(height === 49){
-            limpar = limpar + 1;
-            clearInterval(intHeight);
-          }
-        },5)
-        let intLimpar = setInterval(function(){
-          console.log(limpar)
-          if(limpar === 2){
-            escolha.removeAttribute('style');
-            clearInterval(intLimpar);
-          }
-        },1)
-      }
-    }
-    fechar();
+  caixa.style.display = 'none';
   barrinha.setAttribute('data-escolha', escolha);
   barrinha.setAttribute('data-next', proximo);
   barrinha.setAttribute('data-atual', atual);
