@@ -75,7 +75,7 @@ function fechar(){
       if(escolha.offsetHeight > barrinha.offsetHeight){
         height--;
         console.log(height)
-        escolha.style.height = `calc(${height}px)`;
+        escolha.style.height = `${height}px`;
       }
       if(escolha.offsetWidth > barrinha.offsetWidth){
         width--;
