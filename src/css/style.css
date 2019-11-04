@@ -257,6 +257,7 @@ body,head,html{
   white-space: nowrap;
 }
 #texto-barrinha{
+  display:inline-block;
   overflow:hidden;
   position:relative;
   /*border-right: 2px solid rgba(0,0,0,.75);*/
