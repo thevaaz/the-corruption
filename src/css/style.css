@@ -286,6 +286,8 @@ body,head,html{
   padding:10px;
   height:calc(100% - 132px);
   overflow-y:auto;
+  position: absolute;
+  left: 0;
 }
 .dialogos div:after{
   content: '';
