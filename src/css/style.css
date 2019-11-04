@@ -258,7 +258,9 @@ body,head,html{
 }
 #texto-barrinha{
   display:inline-block;
-  overflow:hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   position:relative;
   /*border-right: 2px solid rgba(0,0,0,.75);*/
   animation: typewriter 1500ms steps(600) 250ms 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
