@@ -14,14 +14,18 @@ function personagemID(){
 function displayEsc(){
   let escolha = document.getElementById('esc'+personagemID());
   if(!block){
-    escolha.style.display = 'grid';
-    let width = 98;//62
-    setInterval(function(){
-      if(width > 46){
-        width--;
-        escolha.style.width = 'calc(100% - ' + width + 'px)';
-      }
-    },5);
+    if(estilo){
+      escolha.style.display = 'grid';
+      let width = 98;//62
+      setInterval(function(){
+        if(width > 46){
+          width--;
+          escolha.style.width = 'calc(100% - ' + width + 'px)';
+        }
+      },5);
+    }else{
+      escolha.style.width = 'calc(100% - 46px)';
+    }
   }
 }
 window.onload = function janelaConversa(dataId){
