@@ -290,6 +290,7 @@ body,head,html{
   overflow-y:auto;
   position: absolute;
   left: 0;
+  width: calc(100% - 21px);
 }
 .dialogos div:after{
   content: '';
