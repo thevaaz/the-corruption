@@ -284,7 +284,7 @@ body,head,html{
 }
 .dialogos{
   padding:10px;
-  max-height:calc(100% - 132px);
+  height:calc(100% - 132px);
   overflow-y:auto;
 }
 .dialogos div:after{
