@@ -123,6 +123,7 @@ function escolher(e){
 }
 function enviar(){
   let e = document.getElementById('barrinha');
+  let txtBarrinha = document.getElementById('texto-barrinha');
   if(!block){
     var idc = personagemID();
     var esc = e.getAttribute("data-escolha");
@@ -136,7 +137,7 @@ function enviar(){
     if(next != "fim"){
       window.onbeforeunload = function impedimento(){return 'Miau';};
       document.getElementById('voltar').removeAttribute('onclick');
-      dialogos.innerHTML += `<div><span class="msg dir">${e.innerHTML}</span></div>`;
+      dialogos.innerHTML += `<div><span class="msg dir">${txtBarrinha.innerHTML}</span></div>`;
       localStorage.setItem('ult'+idc, document.querySelector(`#d${idc} > div:last-child > span`).innerHTML);
       //document.querySelector(`#${personagem[idc].nome+idc} > span.data`).innerHTML = novaHora();
       barrinha.innerHTML = "Escolha uma opção";
