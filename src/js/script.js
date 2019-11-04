@@ -14,8 +14,8 @@ function personagemID(){
 function displayEsc(){
   let escolha = document.getElementById('esc'+personagemID());
   if(!block){
+    escolha.style.display = 'grid';
     if(estilo){
-      escolha.style.display = 'grid';
       let width = 98;//62
       setInterval(function(){
         if(width > 46){
