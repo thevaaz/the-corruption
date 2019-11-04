@@ -301,7 +301,6 @@ body,head,html{
   max-width:46%;
   padding:8px;
   font-size:15px;
-  border:1px solid #bbb;
   margin:10px;
   border-radius:6px;
   transition:.2s;
@@ -322,6 +321,7 @@ body,head,html{
 .esq{
   background:#eee;
   float:left;
+    border:1px solid #fff;
 }
 .dir{
   background: #3b9458;
