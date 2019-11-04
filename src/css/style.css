@@ -260,16 +260,16 @@ body,head,html{
   overflow:hidden;
   position:relative;
   /*border-right: 2px solid rgba(0,0,0,.75);*/
-  animation: typewriter 1500ms steps(1000) 500ms 1 normal both; /*, blinkTextCursor 500ms steps(1000) infinite normal;*/
+  animation: typewriter 1500ms steps(1000) 500ms 1 normal both, blinkTextCursor 500ms steps(1000) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
   to{width:100%;}
 }
-/*@keyframes blinkTextCursor{
+@keyframes blinkTextCursor{
   from{border-right-color: rgba(0,0,0,.75);}
   to{border-right-color: transparent;}
-}*/
+}
 .botao-de-envio{
   position:absolute;
   top:8px;
