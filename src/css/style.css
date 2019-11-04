@@ -301,7 +301,7 @@ body,head,html{
   max-width:46%;
   padding:8px;
   font-size:15px;
-  border:1px solid #ddd;
+  border:1px solid #aaa;
   margin:10px;
   border-radius:6px;
   transition:.2s;
@@ -324,7 +324,7 @@ body,head,html{
   float:left;
 }
 .dir{
-  background: #44a965;
+  background: #3b9458;
   color:#fff;
   float:right;
 }
