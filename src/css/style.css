@@ -216,7 +216,7 @@ body,head,html{
 }
 .escbox{
   position:absolute;
-  bottom:12px;
+  bottom:11px;
   background:#fff;
   width: calc(100% - 121px);
   /*width:calc(100% - 121px);*/
@@ -301,7 +301,7 @@ body,head,html{
   max-width:46%;
   padding:8px;
   font-size:15px;
-  border:1px solid #888;
+  border:1px solid #bbb;
   margin:10px;
   border-radius:6px;
   transition:.2s;
@@ -327,6 +327,7 @@ body,head,html{
   background: #3b9458;
   color:#fff;
   float:right;
+  border:1px solid #44a965;
 }
 .ncon{
   position:absolute;
