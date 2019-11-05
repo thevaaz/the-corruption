@@ -261,7 +261,7 @@ body,head,html{
   /*border-right: .15em solid #44a965; */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
-    typing 1.5s step(30, end),
+    typing 1.5s step(30, end)
     /*blink-caret .5s step-end infinite;*/
 }
 /* The typing effect */
