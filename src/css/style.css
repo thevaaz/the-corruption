@@ -258,10 +258,10 @@ body,head,html{
 }
 #texto-barrinha {
   overflow: hidden;
-  border-right: .15em solid #44a965; 
+  /*border-right: .15em solid #44a965; */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
-    typing 3.5s step(30, end),
+    typing 1.5s step(30, end),
     /*blink-caret .5s step-end infinite;*/
 }
 /* The typing effect */
@@ -269,11 +269,11 @@ body,head,html{
   from { width: 0 }
   to { width: 100% }
 }
-/* The typewriter cursor effect */
+/* The typewriter cursor effect 
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
-}
+}*/
 .botao-de-envio{
   position:absolute;
   top:8px;
