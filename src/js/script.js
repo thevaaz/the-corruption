@@ -122,7 +122,7 @@ function escolher(e){
       }
     },30);
   }else{
-    barrinha.innerHTML = `<div class='bflex'><div id='texto-barrinha'>${e.innerHTML}</div></div>`;
+    barrinha.innerHTML = `<span class='bflex'><div id='texto-barrinha'>${e.innerHTML}</div></span>`;
   }
 }
 function enviar(){
