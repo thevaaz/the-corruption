@@ -261,8 +261,8 @@ body,head,html{
   border-right: .15em solid #44a965; 
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
-    typing 3.5s step-end,
-    blink-caret .5s step-end infinite;
+    typing 3.5s step(30, end),
+    /*blink-caret .5s step-end infinite;*/
 }
 /* The typing effect */
 @keyframes typing {
