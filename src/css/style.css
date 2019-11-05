@@ -256,7 +256,10 @@ body,head,html{
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.barrinha #texto-barrinha {
+.bflex{
+  display:flex;
+}
+.bflex #texto-barrinha {
   overflow: hidden;
   border-right: .15em solid #44a965; 
   white-space: nowrap; /* Keeps the content on a single line */
