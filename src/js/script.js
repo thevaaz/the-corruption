@@ -122,7 +122,7 @@ function escolher(e){
       }
     },30);
   }else{
-    barrinha.innerHTML = `<span id='texto-barrinha'>${e.innerHTML}</span>`;
+    barrinha.innerHTML = `<div id='texto-barrinha'>${e.innerHTML}</div>`;
   }
 }
 function enviar(){
