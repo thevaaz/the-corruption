@@ -78,6 +78,11 @@ var personagem = {
         "callback":"",
         "con":["",""]
       }
-    ]
+    ],
+    "switter":{
+      "postagens":[
+          "Jantar com Miguel foi incrivel!"
+      ]
+    }
   }
 };
