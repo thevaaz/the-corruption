@@ -17,9 +17,14 @@ var estilo = false;
     revealText.append(span);
   });
   setTimeout(function(){
-    setInterval(function(){
+    let intOp = setInterval(function(){
       tcLoading.style.opacity = '0.'+tcOpacity;
-      tcOpacity--;
+      if(tcOpacity > 0){
+        tcOpacity--;
+      }else{
+        tcLoading.style.display = 'none';
+        clearInterval(intOp);
+      }
     }, 30);
   }, 3500);
 })();
