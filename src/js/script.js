@@ -6,14 +6,22 @@ var estilo = false;
   let delay = 0.3;
   let revealText = document.querySelector(".reveal");
   let letters = revealText.textContent.split("");
+  let tcLoading = document.getElementsByClassName("tc-loading")[0];
   revealText.textContent = "";
   let middle = letters.filter(e => e !== " ").length / 2;
+  let tcOpacity = 9;
   letters.forEach((letter, i) => {
     let span = document.createElement("span");
     span.textContent = letter;
     span.style.animationDelay = `${delay + Math.abs(i - middle) * 0.1}s`;
     revealText.append(span);
   });
+  setTimeout(function(){
+    setInterval(function(){
+      tcLoading.style.opacity = '0.'+tcOpacity;
+      tcOpacity--;
+    }, 30);
+  }, 3500);
 })();
 function novaHora() {
   function pad(s) {
