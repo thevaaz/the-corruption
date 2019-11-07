@@ -15,7 +15,7 @@ let personagemID = document.body.id.split('id').join('');
 (function carregarPerfil(){
   let nome = document.getElementById('nome');
   let foto = document.getElementById('foto');
-  foto.backgroundImage = `url('${personagem[personagemID].foto}')`;
+  foto.style.backgroundImage = `url('${personagem[personagemID].foto}')`;
   nome.innerHTML = personagem[personagemID].nome;
 })();
 (function carregarPostagens(){
