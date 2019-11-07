@@ -30,6 +30,11 @@ if(document.querySelector(".reveal")){
     }, 3500);
   })();
 }
+function callBackCheck(e){
+  if(e !== ""){
+    e();
+  }
+}
 function novaHora() {
   function pad(s) {
     return (s < 10) ? '0' + s : s;
@@ -177,6 +182,7 @@ function enviar(){
       barrinha.removeAttribute('data-escolha');
       barrinha.removeAttribute('data-next');
       barrinha.removeAttribute('data-atual');
+      setTimeout(function(){callBackCheck(personagem[idc].dialogos[atual].callback);}, 3000);
       var segundos = personagem[idc].dialogos[atual].rs[esc].length;
       if(personagem[idc].dialogos[atual].rs[esc] && personagem[idc].dialogos[atual].rs[esc] !== ""){
         dialogos.innerHTML += `<div style="display:none"><span class="msg esq">${personagem[idc].dialogos[atual].rs[esc]}</span></div>`;
