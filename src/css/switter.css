@@ -117,6 +117,7 @@ body,html,head{
   height:50px;
   border-radius:50%;
   border:1px solid rgba(255,255,255,.2);
+  background-size: 100%;
 }
 .nome{
   position:absolute;
