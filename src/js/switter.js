@@ -16,11 +16,9 @@ function personagemID(){
 (function carregarPerfil(){
   let nome = document.getElementById('nome');
   let foto = document.getElementById('foto');
-  let arr = [{
-  "conteudo":"Alguma coisa",
-  "horario":"17:42",
-  "comentarios":"0"
-}];
+  foto.backgroundImage = `url('${personagem[personagemID()].foto'})`;
+  nome.innerHTML = personagem[personagemID()].nome;
+})();
 (function carregarPostagens(){
   let linhaDoTempo = document.getElementById('linha-do-tempo');
   let postagem = JSON.parse(localStorage.getItem('postagem'+personagemID()));
