@@ -1,3 +1,6 @@
+function personagemID(){
+  return document.body.id.split('id').join('');
+}
 (function loading(){
   let fade = 9;
   let loadingTO = setTimeout(function(){
