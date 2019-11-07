@@ -1,5 +1,5 @@
 let personagemID = document.body.id.split('id').join('');
-(function loading(){
+window.onload = function loading(){
   let fade = 9;
   let loadingTO = setTimeout(function(){
     setInterval(function(){
@@ -10,7 +10,7 @@ let personagemID = document.body.id.split('id').join('');
       }
     }, 25);
   },1500);
-})();
+};
 (function carregarPerfil(){
   let nome = document.getElementById('nome');
   let foto = document.getElementById('foto');
