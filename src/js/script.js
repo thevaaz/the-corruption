@@ -182,7 +182,9 @@ function enviar(){
         dialogos.innerHTML += `<div style="display:none"><span class="msg esq">${personagem[idc].dialogos[atual].rs[esc]}</span></div>`;
       }
       setTimeout(function(){
-        personagem[idc].dialogos[atual].callback[esc]();
+        if(personagem[idc].dialogos[atual].callback !== ""){
+          personagem[idc].dialogos[atual].callback[esc]();
+        }
         dialogos.querySelector("div:last-child").style.display = "block";
         escrevendo.style.display = "none";
         dialogos.scrollBy(0, dialogos.offsetHeight);
