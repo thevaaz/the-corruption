@@ -57,11 +57,11 @@ var personagem = {
         "noticia":"",
         "callback":[function(){localStorage.setItem("postagem3266820", `[{
   "conteudo":"Ansiosa para o jantar com Miguel 😍",
-  "horario":${novaHora()},
+  "horario":"14:08",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"},function(){localStorage.setItem("postagem3266820", `[{
   "conteudo":"Ansiosa para o jantar com Miguel 😍",
-  "horario":${novaHora()},
+  "horario":"14:08",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"}],
         "con":["",""]
@@ -74,7 +74,7 @@ var personagem = {
         "noticia":"",
         "callback":[function(){localStorage.setItem("postagem3266820", `[{
   "conteudo":"Ansiosa para o jantar com Miguel 😍",
-  "horario":${novaHora()},
+  "horario":"14:08",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"},""],
         "con":["",""]
