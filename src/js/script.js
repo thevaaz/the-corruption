@@ -183,7 +183,7 @@ function enviar(){
       }
       setTimeout(function(){
         if(personagem[idc].dialogos[atual].callback[esc] !== ""){
-          personagem[idc].dialogos[atual].callback[esc]();
+          personagem[idc].dialogos[atual].callback[esc](novaHora());
         }
         dialogos.querySelector("div:last-child").style.display = "block";
         escrevendo.style.display = "none";
