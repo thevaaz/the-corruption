@@ -15,6 +15,7 @@ body,head,html{
   background:#2a2a2d;
 }
 #notificacao{
+  display:none;
   position:absolute;
   top:0;
   left:0;
