@@ -1,11 +1,12 @@
 let personagemID = document.body.id.split('id').join('');
 let fade = 9;
-let loadingTO = setTimeout(function(){
-  setInterval(function(){
+setTimeout(function(){
+  let loadingTO = setInterval(function(){
     document.getElementById('loading').style.opacity = '0.'+fade;
     fade--;
     if(fade <= 1){
       document.getElementById('loading').style.display = 'none';
+      clearInterval(loadingTO);
     }
   }, 25);
 },1500);
