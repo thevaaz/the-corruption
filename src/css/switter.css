@@ -2,26 +2,23 @@
 *{
   scrollbar-width: thin;
 }
-*::-webkit-scrollbar-track
-{
-	background-color: #eee;
+*::-webkit-scrollbar-track{
+  background-color: #eee;
 }
-*::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: #F5F5F5;
+*::-webkit-scrollbar{
+  width: 8px;
+  background-color: #F5F5F5;
 }
-*::-webkit-scrollbar-thumb
-{
+*::-webkit-scrollbar-thumb{
   border-radius:3px;
-	background-color: #ccc;
-	border: 1px solid #eee;
+  background-color: #ccc;
+  border: 1px solid #eee;
 }
 body,html,head{
   padding:0;
   margin:auto;
-  background:#fff;
-  color:#666;
+  background:#25003e;
+  color:#fff;
   font-family:arial;
 }
 /*.mobile-size{
@@ -33,13 +30,14 @@ body,html,head{
   box-shadow:9px 9px 8px #999;
 }*/
 .header{
-  background:#25003e;
+  background:#30024f;
   color:#fff;
   font-size:18px;
   font-family:arial;
   text-transform:uppercase;
   font-weight:600;
   height:50px;
+  border-bottom:1px solid rgba(0,0,0,.5);
 }
 .switterlogo{
   font-size:25px;
@@ -90,7 +88,7 @@ body,html,head{
   overflow-y:auto;
 }
 .card{
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid (255,255,255,.2);
   overflow:auto;
 }
 #foto{
@@ -98,7 +96,7 @@ body,html,head{
   height:130px;
   border-radius:50%;
   margin:20px auto 20px auto;
-  border:1px solid #ddd;
+  border:1px solid (255,255,255,.2);
   background-size: 100%;
 }
 #nome{
@@ -107,18 +105,18 @@ body,html,head{
   font-size:17px
 }
 .post{
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid (255,255,255,.2);
 }
 .post-top{
   padding:10px;
   position:relative;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid (255,255,255,.2);
 }
 .foto{
   width:50px;
   height:50px;
   border-radius:50%;
-  border:1px solid #ddd;
+  border:1px solid (255,255,255,.2);
 }
 .nome{
   position:absolute;
@@ -139,22 +137,22 @@ body,html,head{
 }
 .fotos{
   display:grid;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid (255,255,255,.2);
   grid-template-columns:auto auto auto;
   grid-gap:5px;
   padding:5px;
 }
 .fotos div{
   height:60px;
-  border:1px solid #ddd;
+  border:1px solid (255,255,255,.2);
   border-radius:4px;
 }
 .container-comentarios{
   margin-bottom:10px;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid (255,255,255,.2);
 }
 .contador{
   padding:15px;
-  border-top:1px solid #ddd;
+  border-top:1px solid (255,255,255,.2);
   font-size:15px;
 }
