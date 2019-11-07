@@ -1,15 +1,17 @@
 let personagemID = document.body.id.split('id').join('');
-let fade = 9;
-setTimeout(function(){
-  let loadingTO = setInterval(function(){
-    document.getElementById('loading').style.opacity = '0.'+fade;
-    fade--;
-    if(fade <= 1){
-      document.getElementById('loading').style.display = 'none';
-      clearInterval(loadingTO);
-    }
-  }, 25);
-},1500);
+(function loading(){
+  let fade = 9;
+  setTimeout(function(){
+    let loadingTO = setInterval(function(){
+      document.getElementById('loading').style.opacity = '0.'+fade;
+      fade--;
+      if(fade <= 1){
+        document.getElementById('loading').style.display = 'none';
+        clearInterval(loadingTO);
+      }
+    }, 25);
+  },1500);
+})();
 (function carregarPerfil(){
   let nome = document.getElementById('nome');
   let foto = document.getElementById('foto');
