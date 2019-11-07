@@ -30,7 +30,7 @@ let personagemID = document.body.id.split('id').join('');
       ${postagem[0].conteudo}
     </div>
     <div class="container-comentarios">
-      <div class="contador">Comentarios:<span class="quantidade"> ${postagem[0]["comentarios"]}</span></div>
+      <div class="contador">Comentarios:<span class="quantidade"> ${postagem[0].comentarios}</span></div>
       <div class="comentarios"></div>
     </div>
   </div>` + linhaDoTempo.innerHTML;
