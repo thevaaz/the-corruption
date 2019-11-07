@@ -12,7 +12,7 @@ var personagem = {
         "rs":["Quem é você? Estou bem sim obrigada por perguntar","Oi, quem é você?"],
         "nx":["1","1"],
         "noticia":"",
-        "callback":"",
+        "callback":["",""],
         "con":["",""]
       },
       {
@@ -21,7 +21,7 @@ var personagem = {
         "rs":["Tenho 5 minutos antes da reunião começar, pode falar","Ah! Oiii, me diz, o que precisa?"],
         "nx":["2","3"],
         "noticia":"",
-        "callback":"",
+        "callback":["",""],
         "con":["",""]
       },
       {
@@ -30,7 +30,7 @@ var personagem = {
         "rs":["Podemos, sim um jantar?","Isso está estranho... Tudo bem, Mas primeiro me diz sobre o que se trata"],
         "nx":["4","5"],
         "noticia":"",
-        "callback":"",
+        "callback":["",""],
         "con":["",""]
       },
       {
@@ -39,7 +39,7 @@ var personagem = {
         "rs":["Que bom! Se precisar de mim estou aqui ;)","Eu sempre estou, mas do que está falando?"],
         "nx":["7","5"],
         "noticia":"",
-        "callback":"fim",
+        "callback":["",""],
         "con":["",""]
       },
       {
@@ -47,7 +47,8 @@ var personagem = {
         "op":["Um jantar seria ótimo, a que horas?","Otimo! Te pego as 19 hrs, tudo bem pra você?"],
         "rs":["As 19 hrs","Tudo bem sim, vou estar pronta."],
         "nx":["6","6"],
-        "noticia":[function(){localStorage.setItem("postagem3266820", `[{
+        "noticia":"",
+        "callback":[function(){localStorage.setItem("postagem3266820", `[{
   "conteudo":"Alguma coisa",
   "horario":"17:42",
   "comentarios":"0"
@@ -56,7 +57,6 @@ var personagem = {
   "horario":"17:42",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"}],
-        "callback":"",
         "con":["",""]
       },
       {
@@ -78,7 +78,7 @@ var personagem = {
         "rs":["",""],
         "nx":["fim","fim"],
         "noticia":"", 
-        "callback":"", 
+        "callback":["",""], 
         "con":["",""] 
       },
       {
@@ -86,12 +86,12 @@ var personagem = {
         "op":["Então... Estava pensando, gostaria de sair pra fazer alguma coisa?","Obrigado :)"],
         "rs":["Claro, que tal um jantar?",""],
         "nx":["4","6"],
-        "noticia":[function(){localStorage.setItem("postagem3266820", `[{
+        "noticia":"",
+        "callback":[function(){localStorage.setItem("postagem3266820", `[{
   "conteudo":"Alguma coisa",
   "horario":"17:42",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"},""],
-        "callback":"",
         "con":["",""]
       },
     ],
