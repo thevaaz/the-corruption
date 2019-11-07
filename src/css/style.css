@@ -14,6 +14,20 @@ body,head,html{
   overflow: hidden;
   background:#2a2a2d;
 }
+#notificacao{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  font-size:17px;
+  padding:15px;
+  background:#fff;
+}
+#notificacao span{
+  padding-right:5px;
+  border-right:1px solid;
+  margin-right:5px;
+}
 .tc-loading {
   display: flex;
   height: 100%;
