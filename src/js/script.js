@@ -177,12 +177,12 @@ function enviar(){
       barrinha.removeAttribute('data-escolha');
       barrinha.removeAttribute('data-next');
       barrinha.removeAttribute('data-atual');
-      setTimeout(function(){personagem[idc].dialogos[atual].callback[esc]()}, 3000);
       var segundos = personagem[idc].dialogos[atual].rs[esc].length;
       if(personagem[idc].dialogos[atual].rs[esc] && personagem[idc].dialogos[atual].rs[esc] !== ""){
         dialogos.innerHTML += `<div style="display:none"><span class="msg esq">${personagem[idc].dialogos[atual].rs[esc]}</span></div>`;
       }
       setTimeout(function(){
+        personagem[idc].dialogos[atual].callback[esc]();
         dialogos.querySelector("div:last-child").style.display = "block";
         escrevendo.style.display = "none";
         dialogos.scrollBy(0, dialogos.offsetHeight);
