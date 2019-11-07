@@ -30,13 +30,13 @@ if(document.querySelector(".reveal")){
     }, 3500);
   })();
 }
-function novaHora() {
+/*function novaHora() {
   function pad(s) {
     return (s < 10) ? '0' + s : s;
   }
   var date = new Date();
   return [date.getHours(), date.getMinutes()].map(pad).join(':');
-}
+}*/
 function personagemID(){
   return document.body.id.split('id').join('');
 }
