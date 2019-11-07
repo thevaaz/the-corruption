@@ -47,7 +47,7 @@ var personagem = {
         "op":["Um jantar seria ótimo, a que horas?","Otimo! Te pego as 19 hrs, tudo bem pra você?"],
         "rs":["As 19 hrs","Tudo bem sim, vou estar pronta."],
         "nx":["6","6"],
-        "noticia":"",
+        "noticia":[function(){localStorage.setItem("postagem3266820");document.getElementById("notificacao").style.display="block"},function(){localStorage.setItem("postagem3266820");document.getElementById("notificacao").style.display="block"}],
         "callback":"",
         "con":["",""]
       },
@@ -57,7 +57,7 @@ var personagem = {
         "rs":["Então finalmente vai seguir meu conselho... Adoraria sair pra jantar :)","Ah... Que bom pra você..."],
         "nx":["6","6"],
         "noticia":"",
-        "callback":"",
+        "callback":[function(){localStorage.setItem("postagem3266820");document.getElementById("notificacao").style.display="block"},""],
         "con":["",""]
       },
       {
@@ -74,10 +74,10 @@ var personagem = {
         "op":["Então... Estava pensando, gostaria de sair pra fazer alguma coisa?","Obrigado :)"],
         "rs":["Claro, que tal um jantar?",""],
         "nx":["4","6"],
-        "noticia":"",
+        "noticia":[function(){localStorage.setItem("postagem3266820");document.getElementById("notificacao").style.display="block"},""],
         "callback":"",
         "con":["",""]
-      }
+      },
     ],
     "switter":{
       "postagens":[
