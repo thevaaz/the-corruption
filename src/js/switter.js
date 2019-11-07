@@ -12,12 +12,6 @@ let personagemID = document.body.id.split('id').join('');
     }, 25);
   },1500);
 })();
-(function carregarPerfil(){
-  let nome = document.getElementById('nome');
-  let foto = document.getElementById('foto');
-  foto.style.backgroundImage = `url('${personagem[personagemID].imagem}')`;
-  nome.innerHTML = personagem[personagemID].nome;
-})();
 (function carregarPostagens(){
   let linhaDoTempo = document.getElementById('linha-do-tempo');
   let postagem = JSON.parse(localStorage.getItem('postagem'+personagemID));
@@ -35,4 +29,14 @@ let personagemID = document.body.id.split('id').join('');
       <div class="comentarios"></div>
     </div>
   </div>` + linhaDoTempo.innerHTML;
+})();
+(function carregarPerfil(){
+  let nome = document.getElementById('nome');
+  let foto = document.getElementById('foto');
+  let fotos = document.getElementsByClassName('foto');
+  nome.innerHTML = personagem[personagemID].nome;
+  foto.style.backgroundImage = `url('https://app.sollic.com/${personagem[personagemID].imagem}')`;
+  for(let i = 0;i < fotos.length;i++){
+    fotos[i].style.backgroundImage = `url('https://app.sollic.com/${personagem[personagemID].imagem}')`;
+  }
 })();
