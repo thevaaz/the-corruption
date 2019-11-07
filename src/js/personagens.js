@@ -48,11 +48,7 @@ var personagem = {
         "rs":["As 19 hrs","Tudo bem sim, vou estar pronta."],
         "nx":["6","6"],
         "noticia":"",
-        "callback":[function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Alguma coisa",
-  "horario":"17:42",
-  "comentarios":"0"
-}]`);document.getElementById("notificacao").style.display="block"},function(){localStorage.setItem("postagem3266820", `[{
+        "callback":["", `[{
   "conteudo":"Alguma coisa",
   "horario":"17:42",
   "comentarios":"0"
@@ -87,11 +83,7 @@ var personagem = {
         "rs":["Claro, que tal um jantar?",""],
         "nx":["4","6"],
         "noticia":"",
-        "callback":[function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Alguma coisa",
-  "horario":"17:42",
-  "comentarios":"0"
-}]`);document.getElementById("notificacao").style.display="block"},""],
+        "callback":["",""],
         "con":["",""]
       },
     ],
