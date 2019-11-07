@@ -24,10 +24,10 @@ let personagemID = document.body.id.split('id').join('');
     <div class="post-top">
       <div class="foto"></div>
       <div class="nome">${personagem[personagemID].nome}</div>
-      <div class="data">${postagem[0]["horario"]}</div>
+      <div class="data">${postagem[0].horario}</div>
     </div>
     <div class="post-bottom">
-      ${postagem[0]["conteudo"]}
+      ${postagem[0].conteudo}
     </div>
     <div class="container-comentarios">
       <div class="contador">Comentarios:<span class="quantidade"> ${postagem[0]["comentarios"]}</span></div>
