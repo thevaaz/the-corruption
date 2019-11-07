@@ -1,3 +1,10 @@
+function novaHora() {
+  function pad(s) {
+    return (s < 10) ? '0' + s : s;
+  }
+  var date = new Date();
+  return [date.getHours(), date.getMinutes()].map(pad).join(':');
+}
 var personagem = {
   "3266820":{
     "nome":"Allison",
