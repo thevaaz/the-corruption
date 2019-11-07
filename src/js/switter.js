@@ -5,10 +5,10 @@ function personagemID(){
   let fade = 9;
   let loadingTO = setTimeout(function(){
     setInterval(function(){
-      document.getElementsByClassName('loading')[0].style.opacity = '0.'+fade;
+      document.getElementById('loading').style.opacity = '0.'+fade;
       fade--;
       if(fade <= 1){
-        document.getElementsByClassName('loading')[0].style.display = 'none';
+        document.getElementById('loading').style.display = 'none';
       }
     }, 25);
   },1500);
