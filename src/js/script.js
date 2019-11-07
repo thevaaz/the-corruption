@@ -182,7 +182,7 @@ function enviar(){
         dialogos.innerHTML += `<div style="display:none"><span class="msg esq">${personagem[idc].dialogos[atual].rs[esc]}</span></div>`;
       }
       setTimeout(function(){
-        if(personagem[idc].dialogos[atual].callback[esc] !== "" || personagem[idc].dialogos[atual].callback !== ""){
+        if(personagem[idc].dialogos[atual].callback[esc] !== ""){
           personagem[idc].dialogos[atual].callback[esc]();
         }
         dialogos.querySelector("div:last-child").style.display = "block";
