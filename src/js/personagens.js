@@ -49,11 +49,11 @@ var personagem = {
         "nx":["6","6"],
         "noticia":"",
         "callback":[function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Ótimo jantar com Miguel hoje ;)",
+  "conteudo":"Ansiosa para o jantar com Miguel 😍",
   "horario":"17:42",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"},function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Ótimo jantar com Miguel hoje ;)",
+  "conteudo":"Ansiosa para o jantar com Miguel 😍",
   "horario":"17:42",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"}],
@@ -66,7 +66,7 @@ var personagem = {
         "nx":["6","6"],
         "noticia":"",
         "callback":[function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Ótimo jantar com Miguel hoje ;)",
+  "conteudo":"Ansiosa para o jantar com Miguel 😍",
   "horario":"17:42",
   "comentarios":"0"
 }]`);document.getElementById("notificacao").style.display="block"},""],
