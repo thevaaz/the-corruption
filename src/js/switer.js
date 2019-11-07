@@ -21,10 +21,6 @@ function personagemID(){
   "horario":"17:42",
   "comentarios":"0"
 }];
-  nome.innerHTML = personagem[personagemID()].nome;
-  foto.style.backgroundImage = `url('https://app.sollic.com/${personagem[personagemID()].imagem}')`;
-  localStorage.setItem('postagem3266820', JSON.stringify(arr));
-})();
 (function carregarPostagens(){
   let linhaDoTempo = document.getElementById('linha-do-tempo');
   let postagem = JSON.parse(localStorage.getItem('postagem'+personagemID()));
