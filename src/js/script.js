@@ -40,6 +40,10 @@ if(document.querySelector(".reveal")){
 function personagemID(){
   return document.body.id.split('id').join('');
 }
+(function(){
+  var dialogos = document.getElementById("d"+personagemID());
+  dialogos.scrollBy(0, dialogos.offsetHeight);
+})();
 function displayEsc(){
   let escolha = document.getElementById('esc'+personagemID());
   if(!block){
