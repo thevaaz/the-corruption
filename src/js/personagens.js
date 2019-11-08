@@ -58,7 +58,7 @@ var personagem = {
         "callback":[function(){
           localStorage.setItem("postagem3266820", `[{
             "conteudo":"Ansiosa para o jantar com Miguel 😍",
-            "horario":"14:08",
+            "horario":${String(novaHora())},
             "comentarios":"0"
           }]`);
           document.getElementById("notificacao").style.display="block";
@@ -66,7 +66,7 @@ var personagem = {
         function(){
           localStorage.setItem("postagem3266820", `[{
             "conteudo":"Ansiosa para o jantar com Miguel 😍",
-            "horario":"14:08",
+            "horario":${String(novaHora())},
             "comentarios":"0"
           }]`);
           document.getElementById("notificacao").style.display="block"
@@ -82,7 +82,7 @@ var personagem = {
         "callback":[function(){
           localStorage.setItem("postagem3266820", `[{
             "conteudo":"Ansiosa para o jantar com Miguel 😍",
-            "horario":"14:08",
+            "horario":${String(novaHora())},
             "comentarios":"0"
           }]`);
           document.getElementById("notificacao").style.display="block"
