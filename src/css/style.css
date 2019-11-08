@@ -27,11 +27,13 @@ body,head,html{
   animation:drop .8s;
   -moz-animation:drop .8s;
   -webkit-animation:drop .8s;
+  height: 20px;
 }
 #notificacao span{
-  padding-right:5px;
-  border-right:1px solid;
-  margin-right:5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  position: absolute;
+  left: 70px;
 }
 @keyframes drop{
   0% {top:-100px;} 
@@ -47,6 +49,13 @@ body,head,html{
   0% {top:-100px;} 
   50% {top:10px;}
   100% {top:0px;}
+}
+.switternotificacao {
+  font-size: 42px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
 }
 .tc-loading {
   display: flex;
