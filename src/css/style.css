@@ -333,6 +333,7 @@ body,head,html{
   /*width:calc(100% - 121px);*/
   padding:15px;
   /*background:rgba(0,0,0,.5);*/
+  min-height:48px;
   border-radius:23px 23px;
   display:none;
   grid-template-columns:auto auto;
