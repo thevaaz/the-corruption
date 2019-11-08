@@ -91,7 +91,7 @@ var personagem = {
       },
       {
         "atual":"6",
-        "op":["",""],
+        "op":["&nbsp;","&nbsp;"],
         "rs":["",""],
         "nx":["fim","fim"],
         "noticia":"", 
