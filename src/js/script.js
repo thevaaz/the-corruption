@@ -42,7 +42,9 @@ function personagemID(){
 }
 (function(){
   var dialogos = document.getElementById("d"+personagemID());
-  dialogos.scrollBy(0, dialogos.offsetHeight);
+  if(dialogos){
+    dialogos.scrollBy(0, dialogos.offsetHeight);
+  }
 })();
 function displayEsc(){
   let escolha = document.getElementById('esc'+personagemID());
