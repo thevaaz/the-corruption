@@ -61,7 +61,6 @@ var personagem = {
             "horario":"14:08",
             "comentarios":"0"
           }]`);
-          localStorage.setItem(document.body.id, document.body.innerHTML);
           document.getElementById("notificacao").style.display="block";
         },
         function(){
@@ -70,7 +69,6 @@ var personagem = {
             "horario":"14:08",
             "comentarios":"0"
           }]`);
-          localStorage.setItem(document.body.id, document.body.innerHTML);
           document.getElementById("notificacao").style.display="block"
         }],
         "con":["",""]
@@ -87,7 +85,6 @@ var personagem = {
             "horario":"14:08",
             "comentarios":"0"
           }]`);
-          localStorage.setItem(document.body.id, document.body.innerHTML);
           document.getElementById("notificacao").style.display="block"
         },""],
         "con":["",""]
