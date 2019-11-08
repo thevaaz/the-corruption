@@ -24,11 +24,29 @@ body,head,html{
   padding:25px;
   background:#fff;
   z-index: 99;
+  animation:drop .8s;
+  -moz-animation:drop .8s;
+  -webkit-animation:drop .8s;
 }
 #notificacao span{
   padding-right:5px;
   border-right:1px solid;
   margin-right:5px;
+}
+@keyframes drop{
+  0% {top:-100px;} 
+  50% {top:10px;}
+  100% {top:0px;}
+}
+@-moz-keyframes drop{
+  0% {top:-100px;} 
+  50% {top:10px;}
+  100% {top:0px;}
+}
+@-webkit-keyframes drop{
+  0% {top:-100px;} 
+  50% {top:10px;}
+  100% {top:0px;}
 }
 .tc-loading {
   display: flex;
