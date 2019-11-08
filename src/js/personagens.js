@@ -55,15 +55,22 @@ var personagem = {
         "rs":["As 19 hrs","Tudo bem sim, vou estar pronta."],
         "nx":["6","6"],
         "noticia":"",
-        "callback":[function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Ansiosa para o jantar com Miguel 😍",
-  "horario":"14:08",
-  "comentarios":"0"
-}]`);document.getElementById("notificacao").style.display="block"},function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Ansiosa para o jantar com Miguel 😍",
-  "horario":"14:08",
-  "comentarios":"0"
-}]`);document.getElementById("notificacao").style.display="block"}],
+        "callback":[function(){
+          localStorage.setItem("postagem3266820", `[{
+            "conteudo":"Ansiosa para o jantar com Miguel 😍",
+            "horario":"14:08",
+            "comentarios":"0"
+          }]`);
+          document.getElementById("notificacao").style.display="block"
+        },
+        function(){
+          localStorage.setItem("postagem3266820", `[{
+            "conteudo":"Ansiosa para o jantar com Miguel 😍",
+            "horario":"14:08",
+            "comentarios":"0"
+          }]`);
+          document.getElementById("notificacao").style.display="block"
+        }],
         "con":["",""]
       },
       {
@@ -72,11 +79,14 @@ var personagem = {
         "rs":["Então finalmente vai seguir meu conselho... Adoraria sair pra jantar :)","Ah... Que bom pra você..."],
         "nx":["6","6"],
         "noticia":"",
-        "callback":[function(){localStorage.setItem("postagem3266820", `[{
-  "conteudo":"Ansiosa para o jantar com Miguel 😍",
-  "horario":"14:08",
-  "comentarios":"0"
-}]`);document.getElementById("notificacao").style.display="block"},""],
+        "callback":[function(){
+          localStorage.setItem("postagem3266820", `[{
+            "conteudo":"Ansiosa para o jantar com Miguel 😍",
+            "horario":"14:08",
+            "comentarios":"0"
+          }]`);
+          document.getElementById("notificacao").style.display="block"
+        },""],
         "con":["",""]
       },
       {
