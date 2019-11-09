@@ -11,6 +11,11 @@ function pagina(e){
     setTimeout(function(){window.location.href = "/noticias/"},320);
   }
 }
+window.onload = function sumir(){
+  if(!localStorage.getItem("sumiu")){
+    document.getElementsByClassName("telafull")[0].style.display="block";
+  }
+};
 for(let i = 0; i < apps.length; i++){
   apps[i].addEventListener("click", function expandir(){
     exp.style.left = `${this.offsetLeft}px`;
