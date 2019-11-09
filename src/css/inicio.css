@@ -6,6 +6,16 @@ body,html,head{
   background-size:100%;
   background-repeat:no-repeat;
 }
+.prealfa{
+  position:fixed;
+  top: calc(50% - 75px);
+  left: calc(50% - 140px);
+  max-width: 240px;
+  background:purple;
+  color:#fff;
+  font-size:17px;
+  padding:20px;
+}
 .prealfa div{
   text-align: center;
   background: rgba(255,255,255,0.1);
