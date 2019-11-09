@@ -380,16 +380,6 @@ body,head,html{
   padding:15.5px;
   text-transform:initial;
 }
-.prealfa{
-  position:fixed;
-  top: calc(50% - 75px);
-  left: calc(50% - 140px);
-  max-width: 240px;
-  background:purple;
-  color:#fff;
-  font-size:17px;
-  padding:20px;
-}
 .digitando {
   color:#fff;
   display: none;
