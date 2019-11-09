@@ -87,19 +87,19 @@ function fechar(){
       let intSize = setInterval(function(){
         if(escolha.offsetHeight > barrinha.offsetHeight){
           height--;
-          console.log(height)
+          console.log(height);
           escolha.style.height = `${height}px`;
         }
         if(escolha.offsetWidth > barrinha.offsetWidth){
           width--;
-          console.log(width)
+          console.log(width);
           escolha.style.width = `${width}px`;
         }
         if(escolha.offsetWidth <= barrinha.offsetWidth && escolha.offsetHeight <= barrinha.offsetHeight){
           escolha.removeAttribute('style');
           clearInterval(intSize);
         }
-      },2)
+      },2);
     }else{
       escolha.removeAttribute('style');
     }
