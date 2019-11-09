@@ -12,7 +12,7 @@ for(let i = 0; i < apps.length; i++){
     exp.style.top = `${this.offsetTop}px`;
     exp.style.display = "flex";
     if(this.getAttribute('data-pagina') == "switter"){
-      exp.style.backgroundColor = "#2a2a2d";
+      exp.style.backgroundColor = "#25003e";
       setTimeout(function(){window.location.href = "/switter/"},320);
     }
     if(this.getAttribute('data-pagina') == "mensagens"){
