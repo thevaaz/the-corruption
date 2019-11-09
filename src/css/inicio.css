@@ -14,7 +14,6 @@ body,html,head{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 .circles {
   position: absolute;
@@ -215,6 +214,8 @@ body,html,head{
   padding-top:50px;
   animation:gradeUP 1s;
   width:100%;
+}
+.grade *{
   z-index:50;
 }
 @keyframes gradeUP{
