@@ -13,7 +13,8 @@ function pagina(e){
 }
 window.onload = function sumir(){
   if(!localStorage.getItem("sumiu")){
-    document.getElementsByClassName("telafull")[0].style.display="block";
+    document.getElementById("tc-loading").style.display = "flex" 
+    document.getElementsByClassName("telafull")[0].style.display = "block";
   }
 };
 for(let i = 0; i < apps.length; i++){
