@@ -1,16 +1,5 @@
 let apps = document.getElementsByClassName('apps');
 let exp = document.getElementById('exp');
-function pagina(e){
-  if(e.getAttribute('data-pagina') == "switter"){
-    setTimeout(function(){window.location.href = "/switter/"},320);
-  }
-  if(e.getAttribute('data-pagina') == "mensagens"){
-    setTimeout(function(){window.location.href = "/mensagens/"},320);
-  }
-  if(e.getAttribute('data-pagina') == "noticias"){
-    setTimeout(function(){window.location.href = "/noticias/"},320);
-  }
-}
 window.onload = function sumir(){
   if(!localStorage.getItem("sumiu")){
     document.getElementById("tc-loading").style.display = "flex" 
@@ -22,7 +11,17 @@ for(let i = 0; i < apps.length; i++){
     exp.style.left = `${this.offsetLeft}px`;
     exp.style.top = `${this.offsetTop}px`;
     exp.style.display = "flex";
-    setTimeout(function(){exp.style.display='none'},2000)
+    if(e.getAttribute('data-pagina') == "switter"){
+      exp.style.backgroundColor = "#2a2a2d";
+      setTimeout(function(){window.location.href = "/switter/"},320);
+    }
+    if(e.getAttribute('data-pagina') == "mensagens"){
+      exp.style.backgroundColor = "#2a2a2d";
+      setTimeout(function(){window.location.href = "/mensagens/"},320);
+    }
+    if(e.getAttribute('data-pagina') == "noticias"){
+      setTimeout(function(){window.location.href = "/noticias/"},320);
+    }
   })
 }
 if(document.querySelector(".reveal")){
