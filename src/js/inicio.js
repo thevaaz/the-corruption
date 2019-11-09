@@ -11,15 +11,15 @@ for(let i = 0; i < apps.length; i++){
     exp.style.left = `${this.offsetLeft}px`;
     exp.style.top = `${this.offsetTop}px`;
     exp.style.display = "flex";
-    if(e.getAttribute('data-pagina') == "switter"){
+    if(this.getAttribute('data-pagina') == "switter"){
       exp.style.backgroundColor = "#2a2a2d";
       setTimeout(function(){window.location.href = "/switter/"},320);
     }
-    if(e.getAttribute('data-pagina') == "mensagens"){
+    if(this.getAttribute('data-pagina') == "mensagens"){
       exp.style.backgroundColor = "#2a2a2d";
       setTimeout(function(){window.location.href = "/mensagens/"},320);
     }
-    if(e.getAttribute('data-pagina') == "noticias"){
+    if(this.getAttribute('data-pagina') == "noticias"){
       setTimeout(function(){window.location.href = "/noticias/"},320);
     }
   })
