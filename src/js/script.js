@@ -247,12 +247,6 @@ function back(e){
     e.parentElement.parentElement.removeAttribute("style");
   }
 }
-
-window.onload = function sumir(){
-  if(!localStorage.getItem("sumiu")){
-    document.getElementsByClassName("telafull")[0].style.display="block";
-  }
-};
 if(load){
   (function load(){
     if(localStorage.getItem(document.body.id)){
