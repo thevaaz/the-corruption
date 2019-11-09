@@ -1,6 +1,16 @@
 let apps = document.getElementsByClassName('apps');
 let exp = document.getElementById('exp');
-
+function pagina(e){
+  if(e.getAttribute('data-pagina') == "switter"){
+    setTimeout(function(){window.location.href = "/switter/"},320);
+  }
+  if(e.getAttribute('data-pagina') == "mensagens"){
+    setTimeout(function(){window.location.href = "/mensagens/"},320);
+  }
+  if(e.getAttribute('data-pagina') == "noticias"){
+    setTimeout(function(){window.location.href = "/noticias/"},320);
+  }
+}
 for(let i = 0; i < apps.length; i++){
   apps[i].addEventListener("click", function expandir(){
     exp.style.left = `${this.offsetLeft}px`;
