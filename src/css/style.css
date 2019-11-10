@@ -123,7 +123,7 @@ body,head,html{
   z-index:90;
   color:#fff;
   text-transform: uppercase;
-  height:50px;
+  height:55px;
   border-bottom:1px solid #444;
 }
 .verde{
@@ -150,7 +150,7 @@ body,head,html{
   background:#44a965;
   border:none;
   color:#fff;
-  padding:17px;
+  padding:19px;
   cursor:pointer;
 }
 .btnbarranf{
@@ -231,11 +231,11 @@ body,head,html{
   position:absolute;
   left:32px;
   display:inline-block;
-  top:17px;
+  top:19px;
 } 
 .fa-envelope{
   position:absolute;
-  top:13px;
+  top:17px;
   font-size: 23px
 }
 .fa-check, .fa-check-double{
