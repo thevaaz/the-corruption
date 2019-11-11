@@ -3,12 +3,22 @@ body,html,head{
   padding:0;
   margin:0;
   background: #4e54c8;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background:radial-gradient(circle, transparent, black);
+  animation:backAnimated 10s infinite;
   /*background-repeat:no-repeat;*/
 }
-@keyframes gradientBG {
+@keyframes backAnimated{
+  0%{
+    background-color: #3b0e0e;
+  }
+  50%{
+    background-color: #661919;
+  }
+  100%{
+    background-color: #3b0e0e;
+  }
+}
+/*@keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
 	}
