@@ -1,13 +1,13 @@
 body,html,head{
-  overflow:hidden;
-  padding:0;
-  margin:0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
   background: #4e54c8;
-  background:radial-gradient(circle, transparent, black);
-  animation:backAnimated 10s infinite;
-  /*background-repeat:no-repeat;*/
+  background-image: url(/src/imagens/background.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-@keyframes backAnimated{
+/*@keyframes backAnimated{
   0%{
     background-color: #3b0e0e;
   }
@@ -18,7 +18,7 @@ body,html,head{
     background-color: #3b0e0e;
   }
 }
-/*@keyframes gradientBG {
+@keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
 	}
