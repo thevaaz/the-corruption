@@ -143,13 +143,13 @@ function enviar(){
   }
   block = true;
 }
-const inputEle = document.getElementById('tel');
+/*const inputEle = document.getElementById('tel');
 inputEle.addEventListener('keyup', function(e){
   var key = e.which || e.keyCode;
   if (key == 13) {
     addConversa();
   }
-});
+});*/
 document.getElementById('tel').addEventListener('keyup', function(){
   if(personagem[this.value.split('-').join('')]){
     addConversa();
