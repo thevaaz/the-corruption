@@ -78,6 +78,7 @@
   display:block;
   user-select:text;
   text-align:center;
+  width: 130px;
 }
 .popup a{
   font-size:14px;

@@ -34,13 +34,17 @@ body,html,head{
   padding:0 10px;
 }
 .app-buttons{
-  display:flex;
-  align-items:center;
-  justify-content:right;
+  display: grid;
+  justify-content: right;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 56px);
+  grid-gap: 1px;
 }
 .app-buttons > div{
   height:27px;
-  margin:8px;
+  width: 27px;
+  padding: 14px;
 }
 .placeholder{
   color:#999;
