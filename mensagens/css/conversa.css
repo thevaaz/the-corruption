@@ -26,14 +26,14 @@
   margin-top:-8px;
 }
 .app-logo .profile-picture:before{
-  content:"<";
+  content:url(/src/icons/chevron-left.svg);
   font-weight: bold;
   font-family:monospace;
   color:rgba(255,255,255,.6);
   font-size:20px;
   position: absolute;
   top:3px;
-  left:-15px;
+  left:-20px;
 }
 .container{
   display:grid;

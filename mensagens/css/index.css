@@ -67,7 +67,7 @@
   background:#fff;
   z-index:9;
   text-align:center;
-  background:lightseagreen;
+  /* background:lightseagreen; */
 }
 .popup *{
   box-sizing:border-box;
@@ -78,7 +78,6 @@
   text-align:center;
   padding:15px 0;
   border-bottom:1px solid rgba(0,0,0,0.3);
-  color:#fff;
 }
 .popup input{
   border:1px solid rgba(0,0,0,0.3);
@@ -95,7 +94,7 @@
   padding:10px;
   border-radius:3px;
   color:#000;
-  background:#fff;
+  background:lightseagreen;
   text-align:center;
   text-transform:uppercase;
   border:1px solid rgba(0,0,0,0.3);
