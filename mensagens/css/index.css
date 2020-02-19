@@ -6,6 +6,7 @@
 .app-top-bar{
   background:lightseagreen;
   color:#fff;
+  box-shadow: rgba(0,0,0,0.3) 0 3px 5px;
 }
 .app-logo{
   font-size:32px;
@@ -67,6 +68,7 @@
   background:#fff;
   z-index:9;
   text-align:center;
+  box-shadow: rgba(0,0,0,0.2) 2px 3px 5px;
   /* background:lightseagreen; */
 }
 .popup *{
@@ -93,7 +95,7 @@
   font-size:14px;
   padding:10px;
   border-radius:3px;
-  color:#000;
+  color:#fff;
   background:lightseagreen;
   text-align:center;
   text-transform:uppercase;

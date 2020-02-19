@@ -4,6 +4,7 @@
   background:lightseagreen;
   border-bottom:1px solid rgba(255,255,255,.4);
   color:#fff;
+  box-shadow: rgba(0,0,0,0.3) 0 3px 5px;
 }
 .app-logo{
   justify-content: right;
@@ -39,7 +40,7 @@
   display:grid;
   grid-template-rows:auto 70px;
   color:#fff;
-  background:#333;
+  /* background:#333; */
 }
 .container-message *{
   box-sizing: border-box;
@@ -105,6 +106,7 @@
   background:#fff;
   height: 45px;
   border-radius:50px;
+  box-shadow: rgba(0,0,0,0.2) 2px 3px 5px, rgba(0,0,0,0.2) -0.5px -1px 2px;
 }
 .container-text-bar .send-button{
   background:lightseagreen;
@@ -115,6 +117,7 @@
   justify-content: center;
   align-items: center;
   font-size:25px;
+  box-shadow: rgba(167, 219, 216,0.3) 2px 3px 5px, rgba(167, 219, 216,0.3) -0.5px -1px 2px;
 }
 .container-choices{
   display:none;
