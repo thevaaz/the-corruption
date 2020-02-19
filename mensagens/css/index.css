@@ -1,10 +1,18 @@
-@import url("./default.css");
+@import url("/src/css/default.css");
 .vermelho{
   height:50px;
   background:red;
 }
 .app-top-bar{
-  background-color:linear-gradient(0deg, rgba(0, 0, 0, .07) 0%, #fff 10%, #fff 90%, rgba(0, 0, 0, .07) 100%);
+  background:lightseagreen;
+  color:#fff;
+}
+.app-logo{
+  font-size:32px;
+  color:#fff;
+}
+.app-buttons{
+  font-size:26px;
 }
 .close-button{
   fill:#222;
@@ -51,7 +59,7 @@
 .popup{
   position:fixed;
   top:calc(50% - 110px);
-  left:calc(50% - 150px);
+  left: calc(50% - 125px);
   width:250px;
   height:180px;
   border:1px solid rgba(0,0,0,0.3);
@@ -59,6 +67,7 @@
   background:#fff;
   z-index:9;
   text-align:center;
+  background:lightseagreen;
 }
 .popup *{
   box-sizing:border-box;
@@ -68,7 +77,8 @@
   display:block;
   text-align:center;
   padding:15px 0;
-  border-bottom:1px solid rgba(0,0,0,0.3)
+  border-bottom:1px solid rgba(0,0,0,0.3);
+  color:#fff;
 }
 .popup input{
   border:1px solid rgba(0,0,0,0.3);
@@ -84,10 +94,11 @@
   font-size:14px;
   padding:10px;
   border-radius:3px;
-  color:#fff;
-  background:#333;
+  color:#000;
+  background:#fff;
   text-align:center;
   text-transform:uppercase;
+  border:1px solid rgba(0,0,0,0.3);
 }
 .close{
   position:absolute;

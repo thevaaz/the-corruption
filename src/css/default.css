@@ -20,13 +20,10 @@ body,html,head{
   overflow:hidden;
 }
 .app-logo{
-  display:flex;
-  align-items:center;
+  display:grid;
   justify-content:center;
-}
-.app-logo > div{
-  height:35px;
-  color:#000;
+  justify-items: center;
+  align-items:center;
 }
 .app-name{
   line-height:55px;
@@ -42,8 +39,6 @@ body,html,head{
   grid-gap: 1px;
 }
 .app-buttons > div{
-  height:27px;
-  width: 27px;
   padding: 14px;
 }
 .placeholder{

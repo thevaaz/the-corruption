@@ -1,0 +1,141 @@
+@import url("/src/css/default.css");
+
+.app-top-bar{
+  background:lightseagreen;
+  border-bottom:1px solid rgba(255,255,255,.4);
+  color:#fff;
+}
+.app-logo{
+  justify-content: right;
+  align-items: center;
+  align-content: center;
+}
+.app-name{
+  font-size:15px;
+}
+.app-buttons{
+  font-size: 28px;
+}
+.app-logo .profile-picture{
+  font-size:30px;
+  width:1em;
+  height:1em;
+  border-radius: 50px;
+  border:1px solid rgba(255,255,255,.6);
+  position: relative;
+  margin-top:-8px;
+}
+.app-logo .profile-picture:before{
+  content:"<";
+  font-weight: bold;
+  font-family:monospace;
+  color:rgba(255,255,255,.6);
+  font-size:20px;
+  position: absolute;
+  top:3px;
+  left:-15px;
+}
+.container{
+  display:grid;
+  grid-template-rows:auto 70px;
+  color:#fff;
+  background:#333;
+}
+.container-message *{
+  box-sizing: border-box;
+}
+.msg{
+  display:inline-block;
+  padding:12px;
+}
+.container-message{
+  overflow:auto;
+}
+.container-message div{
+  padding:15px 30px;
+}
+.container-message div.right{
+  display:grid;
+  justify-content: right;
+}
+.container-message div span.right{
+  position:relative;
+  border-radius:5px 0px 5px 5px;
+  background:lightseagreen;
+  color:#fff;
+}
+.container-message div span.left{
+  position:relative;
+  border-radius:0px 5px 5px 5px;
+  background: #eee;
+  color:#000;
+}
+.container-message div span.left:before{
+  content:"";
+  border-right:3px solid #eee;
+  border-top:3px solid #eee;
+  border-bottom:3px solid transparent;
+  border-left:3px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:0;
+  left:-6px;
+}
+.container-message span.right:before{
+  content:"";
+  border-right:3px solid transparent;
+  border-top:3px solid lightseagreen;
+  border-bottom:3px solid transparent;
+  border-left:3px solid lightseagreen;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:0;
+  right:-6px;
+}
+.container-text-bar{
+  display:grid;
+  box-sizing: border-box;
+  grid-template-columns: auto 45px;
+  grid-gap:8px;
+  padding:8px;
+}
+.container-text-bar .text-bar{
+  background:#fff;
+  height: 45px;
+  border-radius:50px;
+}
+.container-text-bar .send-button{
+  background:lightseagreen;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:25px;
+}
+.container-choices{
+  display:none;
+  grid-template-columns: auto auto;
+  color:#000;
+  position: absolute;
+  bottom:8px;
+  margin:8px;
+  border-radius: 15px;
+  background:#fff;
+  padding: 15px;
+}
+.container-choices div.choices{
+  display:grid;
+  align-content: center;
+  align-items: center;
+}
+.container-choices div.choices:first-child{
+  border-right: 1px solid #ccc;
+  padding-right:15px;
+}
+.container-choices div.choices:last-child{
+  padding-left:15px;
+}

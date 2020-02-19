@@ -53,13 +53,13 @@ function novoContato(personagemId){
   if(personagem[personagemId] !== undefined){
     if(document.getElementById("id"+personagemId) === null){
       let chatListItem = create("div",{className:"chat-list-item", id:"id"+personagemId, custom:["data-id", personagemId], appendChild:[
-        create("div", {className:"chat-list-profile-image", style:`background-image:url("${personagem[personagemId].picture}")`}),
-        create("div", {className:"chat-list-profile-name", innerHTML:personagem[personagemId].name}),
+        create("div", {className:"chat-list-profile-image", style:`background-image:url("${personagem[personagemId].foto}")`}),
+        create("div", {className:"chat-list-profile-name", innerHTML:personagem[personagemId].nome}),
         create("div", {className:"chat-list-message", innerHTML:"Nenhuma mensagem"}),
         create("div", {className:"chat-list-date"})
       ]});
       chatListItem.addEventListener("click", function(){
-        window.location.href = personagem[personagemId].mensagem
+        window.location.href = "./conversa.html?personagemId="+personagemId;
       });
       document.getElementById("container").appendChild(chatListItem);
       return "Adicionado";
