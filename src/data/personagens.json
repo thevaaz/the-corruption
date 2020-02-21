@@ -1,0 +1,22 @@
+{
+  "326682":{
+    "nome":"Allison",
+    "foto":"/src/imagens/allison.jpg",
+    "idade":"26",
+    "save":{
+      "ultimaMensagem":"Teste",
+      "ultimoStatus":"O pintinho piu"
+    },
+    "dialogos":null
+  },
+  "123456":{
+    "nome":"Teste",
+    "foto":"/src/imagens/allison-avatar.jpg",
+    "idade":"37",
+    "save":{
+      "ultimaMensagem":"ué",
+      "ultimoStatus":"Ser ou não ser"
+    },
+    "dialogos":null
+  }
+}

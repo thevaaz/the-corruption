@@ -4,7 +4,7 @@ let config;
 function abrirModal(){
   let janela = create("div", {className:"popup"});
   let span = create("span", {innerHTML:"Digite um telefone"});
-  let input = create("input");
+  let input = create("input",{value:"326682"});
   let div = create("a", {innerHTML:"Confirmar"});
   let closeDiv = create("div", {className:"close"});
   
@@ -31,24 +31,23 @@ function abrirModal(){
   input.focus()
 }
 
-function loadPersonagens(){
+(function loadPersonagens(){
   var ajax = new XMLHttpRequest();
-  ajax.open("GET", "/src/js/personagens.json", false);
+  ajax.open("GET", "/src/data/personagens.json", false);
   ajax.send();
   personagem = JSON.parse(ajax.responseText);
   localStorage.setItem("personagens", this.personagem);
   console.log(personagem);
-}
-function loadConfig(){
+})()
+(function loadConfig(){
   var ajax = new XMLHttpRequest();
-  ajax.open("GET", "/src/js/config.json", false);
+  ajax.open("GET", "/src/data/config.json", false);
   ajax.send();
   config = JSON.parse(ajax.responseText);
   localStorage.setItem("config", this.config);
   console.log(config);
-}
-loadConfig()
-loadPersonagens()
+})()
+
 function novoContato(personagemId){
   if(personagem[personagemId] !== undefined){
     if(document.getElementById("id"+personagemId) === null){
@@ -68,6 +67,6 @@ function novoContato(personagemId){
       return "Já existe";
     }
   }else{
-    return "Personagem inexistente"
+    return "Personagem inexistente";
   }
 }
