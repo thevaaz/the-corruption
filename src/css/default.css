@@ -57,3 +57,6 @@ a{
   width:100%;
   height:calc(100% - 55px);
 }
+.hidden{
+  display:none !important;
+}
