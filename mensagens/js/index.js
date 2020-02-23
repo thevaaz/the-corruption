@@ -31,7 +31,7 @@ function abrirModal(){
   input.focus()
 }
 
-(function loadPersonagens(){
+function loadPersonagens(){
   var ajax = new XMLHttpRequest();
   ajax.open("GET", "/src/data/personagens.json", false);
   ajax.send();
