@@ -31,25 +31,34 @@ function abrirModal(){
   input.focus()
 }
 
-function loadPersonagens(){
+(function loadPersonagens(){
   var ajax = new XMLHttpRequest();
   ajax.open("GET", "/src/data/personagens.json", false);
   ajax.send();
   personagem = JSON.parse(ajax.responseText);
   localStorage.setItem("personagens", this.personagem);
   console.log(personagem);
+<<<<<<< HEAD
 }
 loadPersonagens();
 
 function loadConfig(){
+=======
+})()
+(function loadConfig(){
+>>>>>>> 09654c2e17f42174707ff17b8ec63432bfa1b8b6
   var ajax = new XMLHttpRequest();
   ajax.open("GET", "/src/data/config.json", false);
   ajax.send();
   config = JSON.parse(ajax.responseText);
   localStorage.setItem("config", this.config);
   console.log(config);
+<<<<<<< HEAD
 }
 loadConfig();
+=======
+})()
+>>>>>>> 09654c2e17f42174707ff17b8ec63432bfa1b8b6
 
 function novoContato(personagemId){
   if(personagem[personagemId] !== undefined){
