@@ -25,6 +25,9 @@
   border:1px solid rgba(255,255,255,.6);
   position: relative;
   margin-top:-8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .app-logo .profile-picture:before{
   content:url(/src/icons/chevron-left.svg);
@@ -48,6 +51,7 @@
 .msg{
   display:inline-block;
   padding:12px;
+  max-width:200px;
 }
 .container-message{
   overflow:auto;
@@ -68,13 +72,13 @@
 .container-message div span.left{
   position:relative;
   border-radius:0px 5px 5px 5px;
-  background: #eee;
+  background: #f1f1f1;
   color:#000;
 }
 .container-message div span.left:before{
   content:"";
-  border-right:3px solid #eee;
-  border-top:3px solid #eee;
+  border-right:3px solid #f1f1f1;
+  border-top:3px solid #f1f1f1;
   border-bottom:3px solid transparent;
   border-left:3px solid transparent;
   width: 0;
@@ -107,6 +111,21 @@
   height: 45px;
   border-radius:50px;
   box-shadow: rgba(0,0,0,0.2) 2px 3px 5px, rgba(0,0,0,0.2) -0.5px -1px 2px;
+  line-height:45px;
+  padding: 0 15px;
+  color:#444;
+  overflow: hidden;
+}
+#escrita{
+  white-space: nowrap;
+  animation: typing 1s steps(120, end);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 .container-text-bar .send-button{
   background:lightseagreen;
@@ -117,10 +136,11 @@
   justify-content: center;
   align-items: center;
   font-size:25px;
-  box-shadow: rgba(167, 219, 216,0.3) 2px 3px 5px, rgba(167, 219, 216,0.3) -0.5px -1px 2px;
+  color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 5px, rgba(167, 219, 216,0.3) -0.5px -1px 2px;
 }
 .container-choices{
-  display:none;
+  display:grid;
   grid-template-columns: auto auto;
   color:#000;
   position: absolute;
@@ -129,6 +149,8 @@
   border-radius: 15px;
   background:#fff;
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 5px, rgba(167, 219, 216,0.3) -0.5px -1px 2px;
+  width: calc(100% - 46px);
 }
 .container-choices div.choices{
   display:grid;

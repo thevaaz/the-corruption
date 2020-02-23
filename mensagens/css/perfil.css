@@ -1,0 +1,81 @@
+@import url("/src/css/default.css");
+.profile-picture{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app-logo{
+  justify-content: right;
+  align-items: center;
+  align-content: center;
+}
+.app-name{
+  font-size:15px;
+}
+.app-buttons{
+  font-size: 28px;
+}
+.app-logo .profile-picture{
+  font-size:30px;
+  width:1em;
+  height:1em;
+  border-radius: 50px;
+  border:1px solid rgba(255,255,255,.6);
+  position: relative;
+}
+.app-logo .profile-picture:before{
+  content:url(/src/icons/chevron-left.svg);
+  font-weight: bold;
+  font-family:monospace;
+  color:rgba(255,255,255,.6);
+  font-size:20px;
+  position: absolute;
+  top:3px;
+  left:-20px;
+}
+.app-top-bar{
+  background:lightseagreen;
+  border-bottom:1px solid rgba(255,255,255,.4);
+  color:#fff;
+  box-shadow: rgba(0,0,0,0.3) 0 3px 5px;
+}
+.container{
+  background:#f0f0f0;
+}
+.container .profile-picture{
+  font-size:120px;
+  width:1em;
+  height:1em;
+  border-radius:50%;
+  margin:30px auto 15px auto;
+  box-shadow: rgba(0,0,0,0.2) 3px 6px 12px 6px;
+}
+.container #name{
+  font-size:20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.container .profile-summary{
+  box-sizing: border-box;
+  background:#fff;
+  box-shadow: rgba(0,0,0,0.3) 1px 2px 5px;
+  margin:6px;
+  padding:15px;
+}
+.container .profile-summary div{
+  padding:15px 0 15px 0;
+  border-bottom:1px solid rgba(0,0,0,0.3);
+}
+.container .profile-summary div span{
+  float:right;
+}
+.container .profile-summary div:first-child{
+  padding:0 0 15px 0;
+}
+.container .profile-summary div:last-child{
+  border-bottom:none;
+  padding:15px 0 0 0;
+}
+.container .profile-summary a:hover{
+  color:lightseagreen;
+}

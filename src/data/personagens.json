@@ -1,0 +1,61 @@
+{
+  "326682":{
+    "nome":"Allison",
+    "foto":"/src/imagens/allison.jpg",
+    "idade":"26",
+    "save":{
+      "ultimosDialogos":[
+        
+      ],
+      "ultimoStatus":"O pintinho piu"
+    },
+    "dialogos":{
+      "escolhas":["Oi, eu sou o Miguel", "Oi"],
+      "resposta":[["Oi"], ["Quem é você?"]],
+      "continuação":[
+        {
+          "escolhas":["Tudo bem?", "Então... Estou precisando de ajuda."],
+          "resposta":[["Sim e você?"], ["Ta e dai?"]],
+          "continuação":[
+            {
+              "escolhas":["To morrendo socorro","Tomei um tiro na barriga"],
+              "resposta":[
+                ["Legal tomara que morra"],
+                ["Meu deus, onde você está?","Miguel me responde por favor"]
+              ]
+            },
+            {
+              "fim":""
+            }
+          ]
+        },
+        {
+          "escolhas":["Aqui é o Miguel", "Não te interessa, tchau"],
+          "resposta":[["Quem"], ["Sei la"]],
+          "continuação":[
+            {
+              "fim":""
+            },
+            {
+              "fim":""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "123456":{
+    "nome":"Teste",
+    "foto":"/src/imagens/allison-avatar.jpg",
+    "idade":"37",
+    "save":{
+      "ultimosDialogos":[
+        {
+
+        }
+      ],
+      "ultimoStatus":"Ser ou não ser"
+    },
+    "dialogos":null
+  }
+}
