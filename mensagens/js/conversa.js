@@ -77,6 +77,7 @@ function carregarEscolhas(){
   escolhas[0].innerHTML = personagem[personagemId].dialogos.escolhas[0];
   escolhas[1].innerHTML = personagem[personagemId].dialogos.escolhas[1];
 }
+
 carregarEscolhas();
 loadConversa();
 loadMensagens();

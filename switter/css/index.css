@@ -1,0 +1,106 @@
+@import url("/src/css/default.css");
+
+.app-top-bar{
+  background: #5b3f75;
+}
+.app-logo svg{
+  transform: scaleX(-1) rotate(5deg);
+  font-size: 35px;
+  color: #fff;
+}
+.app-name{
+  color: #fff;
+  font-family: 'Odibee Sans';
+  font-size: 23px;
+}
+.app-buttons{
+  color:#fff;
+  font-size: 23px;
+}
+.new-post{
+  box-sizing: border-box;
+  box-shadow: rgba(0,0,0,0.3) 2px 3px 5px, rgba(0,0,0,0.1) -1px -1px 1px;
+  margin: 10px;
+  padding: 10px;
+  color: #666;
+}
+.container-buttons{
+	display:grid;
+	grid-template-columns: calc(100% - 80px) 80px;
+	justify-content: right;
+	align-items: center;
+}
+.post-buttons{
+  display: grid;
+  justify-content: right;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 32px);
+  padding: 0 8px 0 8px;
+}
+.new-post .text{
+  border-bottom: 1px solid #ccc;
+  min-height: 45px;
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.new-post .button, .new-post .button-icons{
+  display: inline-block;
+}
+.new-post .button{
+  color: #fff;
+  background: #5b3f75;
+  padding: 8px;
+}
+.new-post .button-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #666;
+  padding: 3.5px;
+}
+.new-post .button-icons:hover{
+  border: 1px solid #999;
+}
+
+/* ----------------- */
+
+.feed{
+	display: grid;
+	box-sizing: border-box;
+	margin: 10px;
+	grid-gap: 10px;
+}
+.post{
+	display: grid;
+	background:#fff;
+	box-shadow: rgba(0,0,0,0.25) 2px 3px 5px, rgba(0,0,0,0.1) -1px -1px 1px;
+	padding: 10px;
+	grid-gap: 10px;
+}
+.post .profile-info{
+	display: grid;
+	grid-template-columns: 40px auto;
+	grid-gap: 5px;
+}
+.post .profile-info .profile-picture{
+	border: 1px solid #ccc;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.post .profile-info .profile-name{
+	color: #666;
+	padding:6px;
+}
+.post .post-content{
+	padding: 8px 0;
+	color: #444;
+}
+.post .post-foot .like{
+	color:#444;
+	padding: 8px;
+	font-size: 18px;
+}
