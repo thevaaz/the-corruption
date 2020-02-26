@@ -103,12 +103,6 @@
 	margin: 12px 0;
 	max-width:100%;
 }
-.post .post-foot .like{
-	color:#444;
-	padding: 8px;
-	font-size: 18px;
-}
-
 
 /* ---------------- */
 
@@ -117,8 +111,22 @@
   box-shadow: rgba(0,0,0,0.25) 2px 3px 5px, rgba(0,0,0,0.1) -1px -1px 1px;
   padding: 10px;
 }
+.profile-container .profile{
+  display: grid;
+  grid-template-columns: 120px auto;
+  grid-gap: 15px;
+  font-size: 13px;
+}
+.profile-container .profile-info div{
+  margin: 10px 0;
+}
+.profile-container .profile .profile-name{
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
 .profile-container .profile-picture{
   width: 120px;
   height: 120px;
-  
+  border: 1px solid rgba(0,0,0,0.1);
 }
