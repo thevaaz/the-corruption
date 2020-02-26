@@ -125,7 +125,7 @@
 .profile-container .profile .profile-name{
   font-weight: bold;
   font-size: 17px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .profile-container .profile-picture{
   width: 120px;
@@ -136,9 +136,14 @@
   background-repeat: no-repeat;
 }
 .profile-container .profile-description{
-  margin-top: 15px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.profile-container .profile-description strong{
+  font-size: 15px;
 }
 .profile-container .profile-description div{
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
