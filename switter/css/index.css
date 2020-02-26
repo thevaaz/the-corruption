@@ -90,6 +90,9 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .post .profile-info .profile-name{
 	color: #666;
@@ -128,6 +131,9 @@
   width: 120px;
   height: 120px;
   border: 1px solid rgba(0,0,0,0.1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .profile-container .profile-description{
   margin-top: 15px;
