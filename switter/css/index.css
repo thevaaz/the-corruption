@@ -82,7 +82,7 @@
 }
 .post .profile-info{
 	display: grid;
-	grid-template-columns: 40px auto;
+	grid-template-columns: 40px calc(100% - 40px);
 	grid-gap: 5px;
 }
 .post .profile-info .profile-picture{
@@ -94,9 +94,15 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.post .profile-info .profile-name{
+.post .profile-info .profile-name, .post .profile-info .post-date{
 	color: #666;
-	padding:6px;
+	padding:0 6px;
+}
+.post .profile-info .post-date{
+  font-size: 11px;
+}
+.post .post-info{
+  display:grid;
 }
 .post .post-content{
 	padding: 8px 0;
@@ -112,7 +118,8 @@
 .profile-container{
   margin: 10px;
   box-shadow: rgba(0,0,0,0.25) 2px 3px 5px, rgba(0,0,0,0.1) -1px -1px 1px;
-  padding: 10px;
+  padding: 15px;
+  color: #444;
 }
 .profile-container .profile{
   display: grid;
@@ -136,7 +143,7 @@
   background-repeat: no-repeat;
 }
 .profile-container .profile-description{
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.25);
   margin-top: 10px;
   padding-top: 10px;
 }
