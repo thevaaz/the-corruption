@@ -28,4 +28,5 @@ function loadPosts(){
     ]}))
   })
 }
+
 loadPosts();
