@@ -3,10 +3,12 @@ function loadPosts(){
   
   config.personagensConhecidos.forEach(conhecido => {
     console.log(conhecido);
-    personagem[conhecido].switter.posts.forEach(post => {
-      post.id = conhecido;
-      postagens.push(post);
-    });
+    if(personagem[conhecido]){
+      personagem[conhecido].switter.posts.forEach(post => {
+        post.id = conhecido;
+        postagens.push(post);
+      });
+    }
   });
 
   let posts = postagens.sort((a, b) => b.data - a.data);
