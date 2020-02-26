@@ -118,7 +118,7 @@
   font-size: 13px;
 }
 .profile-container .profile-info div{
-  margin: 10px 0;
+  margin: 8px 0;
 }
 .profile-container .profile .profile-name{
   font-weight: bold;
@@ -129,4 +129,7 @@
   width: 120px;
   height: 120px;
   border: 1px solid rgba(0,0,0,0.1);
+}
+.profile-container .profile-description{
+  margin-top: 15px;
 }
