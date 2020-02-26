@@ -3,6 +3,6 @@ function loadPerfil(personagemId = new URL(window.location).searchParams.get("pe
   document.getElementsByClassName("profile-name")[0].innerHTML = personagem[personagemId].nome;
   document.getElementsByClassName("profile-age")[0].innerHTML = `Idade: ${personagem[personagemId].idade}`;
   document.getElementsByClassName("profile-birth-day")[0].innerHTML = `Aniversário: ${personagem[personagemId].aniversario}`;
+  document.getElementsByClassName("profile-about")[0].innerHTML = personagem[personagemId].switter.descrição;
 }
-
-loadPerfil()
+loadPerfil();

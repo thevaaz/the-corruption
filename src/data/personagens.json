@@ -3,6 +3,7 @@
     "nome":"Allison",
     "foto":"/src/imagens/allison.jpg",
     "idade":"26",
+    "aniversario":"06/03",
     "save":{
       "ultimosDialogos":[
         
@@ -42,20 +43,14 @@
           ]
         }
       ]
-    }
-  },
-  "123456":{
-    "nome":"Teste",
-    "foto":"/src/imagens/allison-avatar.jpg",
-    "idade":"37",
-    "save":{
-      "ultimosDialogos":[
-        {
-
-        }
-      ],
-      "ultimoStatus":"Ser ou não ser"
     },
-    "dialogos":null
+    "switter":{
+      "descrição":"Meu nome é Allison, está escrito ali em cima, não precisa ficar perguntando.",
+      "posts":[
+        {
+          "conteudo":"Bom dia!!"
+        }
+      ]
+    }
   }
 }
