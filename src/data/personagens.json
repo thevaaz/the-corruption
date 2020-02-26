@@ -61,5 +61,68 @@
         }
       ]
     }
+  },
+  "123456":{
+    "nome":"Luna",
+    "foto":"/src/imagens/luna.jpg",
+    "idade":"26",
+    "aniversario":"06/03",
+    "save":{
+      "ultimosDialogos":[
+        
+      ],
+      "ultimoStatus":"O pintinho piu"
+    },
+    "dialogos":{
+      "escolhas":["Oi, eu sou o Miguel", "Oi"],
+      "resposta":[["Oi"], ["Quem é você?"]],
+      "continuação":[
+        {
+          "escolhas":["Tudo bem?", "Então... Estou precisando de ajuda."],
+          "resposta":[["Sim e você?"], ["Ta e dai?"]],
+          "continuação":[
+            {
+              "escolhas":["To morrendo socorro","Tomei um tiro na barriga"],
+              "resposta":[
+                ["Legal tomara que morra"],
+                ["Meu deus, onde você está?","Miguel me responde por favor"]
+              ]
+            },
+            {
+              "fim":""
+            }
+          ]
+        },
+        {
+          "escolhas":["Aqui é o Miguel", "Não te interessa, tchau"],
+          "resposta":[["Quem"], ["Sei la"]],
+          "continuação":[
+            {
+              "fim":""
+            },
+            {
+              "fim":""
+            }
+          ]
+        }
+      ]
+    },
+    "switter":{
+      "descrição":"Meu nome é Allison, está escrito ali em cima, não precisa ficar perguntando.",
+      "posts":[
+        {
+          "conteudo":"Mais antigo",
+          "data":1562729125301
+        },
+        {
+          "conteudo":"Antigo",
+          "data":1562729125302
+        },
+        {
+          "conteudo":"Mais novo",
+          "data":1562729125303
+        }
+      ]
+    }
   }
 }

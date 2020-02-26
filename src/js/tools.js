@@ -1,3 +1,5 @@
+let config;
+let personagem;
 function create(elementName, attributes){
   let element = document.createElement(elementName);
   if(attributes !== undefined){
@@ -42,7 +44,6 @@ function loadPersonagens(){
   ajax.send();
   personagem = JSON.parse(ajax.responseText);
   localStorage.setItem("personagens", this.personagem);
-  console.log(personagem);
 }
 loadPersonagens();
 
@@ -52,6 +53,5 @@ function loadConfig(){
   ajax.send();
   config = JSON.parse(ajax.responseText);
   localStorage.setItem("config", this.config);
-  console.log(config);
 }
 loadConfig();
