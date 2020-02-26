@@ -1,6 +1,3 @@
-let personagem;
-let config;
-
 function abrirModal(){
   let janela = create("div", {className:"popup"});
   let span = create("span", {innerHTML:"Digite um telefone"});

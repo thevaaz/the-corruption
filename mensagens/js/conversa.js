@@ -5,8 +5,6 @@ let escrita = document.getElementById("escrita");
 let textBar = document.getElementsByClassName("text-bar")[0];
 let enviar = document.getElementsByClassName("send-button")[0];
 let containerTextBar = document.getElementsByClassName("container-text-bar")[0];
-let url = new URL(window.location);
-let personagemId = url.searchParams.get("personagemId");
 
 function loadConversa(){
   document.getElementsByClassName("app-name")[0].innerHTML = personagem[personagemId].nome;
