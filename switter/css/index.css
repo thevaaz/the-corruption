@@ -114,11 +114,10 @@
 .profile-container .profile{
   display: grid;
   grid-template-columns: 120px auto;
-  grid-gap: 15px;
   font-size: 13px;
 }
 .profile-container .profile-info div{
-  margin: 8px 0;
+  margin: 6px 15px;
 }
 .profile-container .profile .profile-name{
   font-weight: bold;
@@ -132,4 +131,8 @@
 }
 .profile-container .profile-description{
   margin-top: 15px;
+}
+.profile-container .profile-description div{
+  margin-top: 5px;
+  font-size: 15px;
 }
