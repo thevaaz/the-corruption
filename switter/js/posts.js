@@ -1,5 +1,6 @@
 function loadPosts(){
-  personagem[personagemId].switter.posts.forEach(post => {
+  let posts = personagem[personagemId].switter.posts.sort((a, b) => b.data - a.data);
+  posts.forEach(post => {
     let data = new Date(Number(post.data))
     let dia = data.getDate() < 10 ? "0" + data.getDate() : data.getDate();
     let mes = (data.getMonth() + 1) < 10 ? "0" + (data.getMonth() + 1) : (data.getMonth() + 1);
