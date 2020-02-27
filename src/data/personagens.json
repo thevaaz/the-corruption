@@ -11,36 +11,18 @@
       "ultimoStatus":"O pintinho piu"
     },
     "dialogos":{
-      "escolhas":["Oi, eu sou o Miguel", "Oi"],
-      "resposta":[["Oi"], ["Quem é você?"]],
+      "escolhas":["Oi", "Oi tudo bem?"],
+      "resposta":[["Oi quem é você?"], ["Oi, estou bem sim, obrigada por perguntar", "Mas quem é você?"]],
+      "switter":null,
+      "noticia":null,
       "continuação":[
         {
-          "escolhas":["Tudo bem?", "Então... Estou precisando de ajuda."],
-          "resposta":[["Sim e você?"], ["Ta e dai?"]],
-          "continuação":[
-            {
-              "escolhas":["To morrendo socorro","Tomei um tiro na barriga"],
-              "resposta":[
-                ["Legal tomara que morra"],
-                ["Meu deus, onde você está?","Miguel me responde por favor"]
-              ]
-            },
-            {
-              "fim":""
-            }
-          ]
+          "escolhas":["Funcionou", "Funcionou"],
+          "resposta":[[""],[""]]
         },
         {
-          "escolhas":["Aqui é o Miguel", "Não te interessa, tchau"],
-          "resposta":[["Quem"], ["Sei la"]],
-          "continuação":[
-            {
-              "fim":""
-            },
-            {
-              "fim":""
-            }
-          ]
+          "escolhas":["Funcionou", "Funcionou"],
+          "resposta":[[""],[""]]
         }
       ]
     },

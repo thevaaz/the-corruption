@@ -31,7 +31,7 @@ function loadMensagens(){
         create("span", {className:"msg left",innerHTML:mensagem.texto})
       ]}));
     }
-    containerMessage.scrollBy(0, containerMessage.offsetHeight);
+    scrollBottom(containerMessage);
   });
 }
 
@@ -49,23 +49,27 @@ function escolherMensagem(){
 function enviarMensagens() {
   let escolha = escrita.getAttribute("data-choice");
 
-  if(!personagem[personagemId].dialogos.fim){
+  if(personagem[personagemId].dialogos.continuação){
     containerMessage.appendChild(create("div", {className:"right",appendChild:[
       create("span", {className:"msg right",innerHTML:escrita.innerText})
     ]}));
-    containerMessage.scrollBy(0, containerMessage.offsetHeight);
+    scrollBottom(containerMessage);
     
-    setTimeout(() => {
-      for(let i in personagem[personagemId].dialogos.resposta[escolha]){
+    let i = 0;
+    let timeout = setTimeout(function teste(){
+      if(personagem[personagemId].dialogos.resposta[escolha][i]){
         containerMessage.appendChild(create("div", {className:"left",appendChild:[
           create("span", {className:"msg left",innerHTML:personagem[personagemId].dialogos.resposta[escolha][i]})
         ]}));
-        containerMessage.scrollBy(0, containerMessage.offsetHeight);
+        scrollBottom(containerMessage);
+        timeout = setTimeout(teste, 1500);
+        i++;
+      }else{
         personagem[personagemId].dialogos = personagem[personagemId].dialogos.continuação[escolha];
         carregarEscolhas();
       }
     }, 1500);
-    escrita.innerHTML = "";
+    escrita.innerHTML = "Clique aqui para escolher...";
   }else{
     alert("Acabou");
   }

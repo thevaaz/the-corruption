@@ -38,20 +38,35 @@ if(url.searchParams.get("personagemId")){
   var personagemId = url.searchParams.get("personagemId");
 }
 
-function loadPersonagens(){
+(function loadPersonagens(){
   var ajax = new XMLHttpRequest();
   ajax.open("GET", "/src/data/personagens.json", false);
   ajax.send();
   personagem = JSON.parse(ajax.responseText);
   localStorage.setItem("personagens", this.personagem);
-}
-loadPersonagens();
+})();
 
-function loadConfig(){
+(function loadConfig(){
   var ajax = new XMLHttpRequest();
   ajax.open("GET", "/src/data/config.json", false);
   ajax.send();
   config = JSON.parse(ajax.responseText);
   localStorage.setItem("config", this.config);
+})();
+
+function ObjectListener(object, func){
+  let savedObject = JSON.stringify(object);
+  let listener = setInterval(onChange, 0);
+  function onChange(){
+    if(savedObject !== JSON.stringify(object)){
+      savedObject = JSON.stringify(object)
+      func();
+      clearInterval(listener);
+      listener = setInterval(onChange, 0);
+    }
+  }
 }
-loadConfig();
+
+function scrollBottom(elemento){
+  elemento.scrollBy(0, elemento.offsetHeight)
+}
