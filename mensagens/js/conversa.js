@@ -71,11 +71,16 @@ function enviarMensagens(){
         create("span", { className: "msg right", innerHTML:escrita.innerText })
       ]})
     );
+    escolhas[0].innerHTML = "";
+    escolhas[1].innerHTML = "";
     scrollBottom(containerMessage);
     let res = 0;
-    let timeout = setTimeout(teste, 1500);
+    let msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? 80 * personagem[personagemId].dialogos.resposta[escolha][res].length : 0;
+    let timeout = setTimeout(teste, msgLen);
+    
     escrita.innerHTML = "";
     function teste(){
+      msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? 80 * personagem[personagemId].dialogos.resposta[escolha][res].length : 0;
       if(personagem[personagemId].dialogos.resposta[escolha][res]){
         containerMessage.appendChild(
           create("div", { className:"left", appendChild:[
@@ -86,9 +91,7 @@ function enviarMensagens(){
           ]})
         );
         scrollBottom(containerMessage);
-        escolhas[0].innerHTML = "";
-        escolhas[1].innerHTML = "";
-        timeout = setTimeout(teste, 1500);
+        timeout = setTimeout(teste, msgLen);
         res++;
       }else{
         if(personagem[personagemId].dialogos.continuação){
