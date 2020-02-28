@@ -55,7 +55,6 @@ function carregarEscolhas(){
   }else{
     escolhas[0].innerHTML = "";
     escolhas[1].innerHTML = "";
-
   }
 }
 
@@ -87,6 +86,8 @@ function enviarMensagens(){
           ]})
         );
         scrollBottom(containerMessage);
+        escolhas[0].innerHTML = "";
+        escolhas[1].innerHTML = "";
         timeout = setTimeout(teste, 1500);
         res++;
       }else{

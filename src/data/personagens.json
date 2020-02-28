@@ -25,7 +25,7 @@
         },
         {
           "escolhas":["Meu nome é Miguel", "Eu me chamo Miguel, quero comprar um pão de queijo."],
-          "resposta":[["Ok, mas o que você quer?"], ["Tenho cara de padaria agora?", "Brincadeira, R$ 2,50 assado", "R$ 25,00 o pacote congelado", "Qual você quer?"]],
+          "resposta":[["Ok, mas o que você quer?"], ["Tenho cara de padaria agora?", "Brincadeira, R$ 2,50 cada assado", "R$ 25,00 o pacote congelado", "Qual você quer?"]],
           "switter":null,
           "noticia":null,
           "continuação":null
