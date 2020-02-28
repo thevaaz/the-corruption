@@ -43,7 +43,6 @@
   display:grid;
   grid-template-rows:auto 70px;
   color:#fff;
-  /* background:#333; */
 }
 .container-message *{
   box-sizing: border-box;
@@ -115,6 +114,26 @@
   padding: 0 15px;
   color:#444;
   overflow: hidden;
+}
+#digitando{
+  display: none;
+  color: #000;
+  position: absolute;
+  overflow: hidden;
+  bottom: 70px;
+  left: 30px;
+  width: 66px;
+  font-size: 13px;
+  transition-delay: 1s;
+  animation: ellipse-moving 1.5s steps(4, end) infinite;
+}
+@keyframes ellipse-moving {
+  from {
+    width: 56px;
+  }
+  to {
+    width: 68px;
+  }
 }
 #escrita{
   white-space: nowrap;

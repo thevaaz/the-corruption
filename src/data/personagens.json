@@ -13,6 +13,7 @@
     "dialogos":{
       "escolhas":["Oi", "Oi tudo bem?"],
       "resposta":[["Oi quem é você?"], ["Oi, estou bem sim, obrigada por perguntar", "Mas quem é você?"]],
+      "tempo":3000,
       "switter":null,
       "noticia":null,
       "continuação":[
@@ -21,6 +22,7 @@
           "resposta":[["Ok, Miguel do que precisa?"], ["Não vendo Jequiti só lança perfume kkk"]],
           "switter":null,
           "noticia":null,
+          "tempo":3000,
           "continuação":null
         },
         {
@@ -28,6 +30,7 @@
           "resposta":[["Ok, mas o que você quer?"], ["Tenho cara de padaria agora?", "Brincadeira, R$ 2,50 cada (assado)", "R$ 25,00 o pacote congelado com 15", "Qual você quer?"]],
           "switter":null,
           "noticia":null,
+          "tempo":3000,
           "continuação":null
         }
       ]

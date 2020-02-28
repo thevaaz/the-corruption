@@ -5,6 +5,7 @@ let escrita = document.getElementById("escrita");
 let textBar = document.getElementsByClassName("text-bar")[0];
 let enviar = document.getElementsByClassName("send-button")[0];
 let containerTextBar = document.getElementsByClassName("container-text-bar")[0];
+let digitando = document.getElementById("digitando");
 
 function loadConversa(){
   document.getElementsByClassName("app-name")[0].innerHTML = personagem[personagemId].nome;
@@ -76,11 +77,17 @@ function enviarMensagens(){
     scrollBottom(containerMessage);
     let res = 0;
     let msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? 80 * personagem[personagemId].dialogos.resposta[escolha][res].length : 0;
-    let timeout = setTimeout(teste, msgLen);
+    let timeout;
+    let tempo = sessionStorage.getItem("presente") ? 500 : personagem[personagemId].dialogos.tempo;
+    
+    setTimeout(() => {
+      timeout = setTimeout(msgDelay, msgLen);
+      digitando.style.display = "block";
+    }, tempo);
     
     escrita.innerHTML = "";
-    function teste(){
-      msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? 80 * personagem[personagemId].dialogos.resposta[escolha][res].length : 0;
+    function msgDelay(){
+      sessionStorage.setItem("presente", "true");
       if(personagem[personagemId].dialogos.resposta[escolha][res]){
         containerMessage.appendChild(
           create("div", { className:"left", appendChild:[
@@ -90,18 +97,21 @@ function enviarMensagens(){
             })
           ]})
         );
-        scrollBottom(containerMessage);
-        timeout = setTimeout(teste, msgLen);
+        scrollBottom(containerMessage);  
         res++;
+        msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? 80 * personagem[personagemId].dialogos.resposta[escolha][res].length : 0;
+        timeout = setTimeout(msgDelay, msgLen);
       }else{
         if(personagem[personagemId].dialogos.continuação){
           personagem[personagemId].dialogos = personagem[personagemId].dialogos.continuação[escolha];
           carregarEscolhas();
           escrita.innerHTML = "Clique aqui para escolher...";
+          digitando.style.display = "none";
         }else{
           personagem[personagemId].dialogos = null;
           carregarEscolhas();
           escrita.innerHTML = "Não há mais dialogos...";
+          digitando.style.display = "none";
         }
       }
     }
