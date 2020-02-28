@@ -99,7 +99,7 @@ function enviarMensagens(){
         );
         scrollBottom(containerMessage);  
         res++;
-        msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? 80 * personagem[personagemId].dialogos.resposta[escolha][res].length : 0;
+        msgLen = personagem[personagemId].dialogos.resposta[escolha][res] ? (80 * personagem[personagemId].dialogos.resposta[escolha][res].length) + 250 : 0;
         timeout = setTimeout(msgDelay, msgLen);
       }else{
         if(personagem[personagemId].dialogos.continuação){
