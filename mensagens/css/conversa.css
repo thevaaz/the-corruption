@@ -71,13 +71,13 @@
 .container-message div span.left{
   position:relative;
   border-radius:0px 5px 5px 5px;
-  background: #ddd;
+  background: #eee;
   color:#000;
 }
 .container-message div span.left:before{
   content:"";
-  border-right:3px solid #ddd;
-  border-top:3px solid #ddd;
+  border-right:3px solid #eee;
+  border-top:3px solid #eee;
   border-bottom:3px solid transparent;
   border-left:3px solid transparent;
   width: 0;
